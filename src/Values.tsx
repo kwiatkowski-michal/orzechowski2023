@@ -64,12 +64,12 @@ import {
   
   export default function Values() {
     return (
-      <Box p={4} mb={10}>
+      <Box mb={10}>
         <Stack spacing={4} as={Container} maxW={'5xl'}>
           <Heading fontWeight={'bold'}>
             Short heading
           </Heading>
-          <Text color={'gray.600'} fontSize={{ base: 'sm', sm: 'lg' }}>
+          <Text color={'gray.500'} fontSize={'lg'}>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis
             obcaecati ut cupiditate pariatur, dignissimos, placeat amet officiis.
           </Text>
