@@ -1,6 +1,9 @@
+import { ExternalLinkIcon } from '@chakra-ui/icons';
 import {
     Box,
     Container,
+    Image,
+    Link,
     Stack,
     Text,
     useColorModeValue,
@@ -17,9 +20,11 @@ import {
           py={4}
           direction={{ base: 'column', md: 'row' }}
           spacing={4}
-          justify={{ base: 'center', md: 'space-between' }}
-          align={{ base: 'center', md: 'center' }}>
+          justify={{ base: 'left', md: 'space-between' }}
+          align={{ base: 'left', md: 'center' }}>
           <Text>Wykonanie: Michał Kwiatkowski</Text>
+          <Link href={'https://www.lewica.org.pl'}><Image src='logolewica.svg' height={"1.5rem"}/></Link>
+          <Text bgClip='text' bgGradient='linear(to-l, #4e2b8a, #ac145a, #d6001c)'>Sfinansowano przez KW Nowa Lewica</Text>
         </Container>
       </Box>
     );

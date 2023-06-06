@@ -20,7 +20,7 @@ export default function Hero() {
                         fontSize={{ base: '5xl', md: '6xl' }}
                         lineHeight={'110%'} color={'brand.100'}>
                         Hej! <br />
-                        <Text as={'span'} color={'black'}>
+                        <Text as={'span'} color={'black'} >
                             Witajcie na mojej stronie!
                         </Text>
                     </Heading>
