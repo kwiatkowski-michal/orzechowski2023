@@ -1,3 +1,4 @@
+import { ExternalLinkIcon } from '@chakra-ui/icons';
 import {
     Box,
     Button,
@@ -53,7 +54,7 @@ import {
               {description}
             </Text>
           </Box>
-          <Button variant={'link'} colorScheme={'blue'} size={'sm'}>
+          <Button variant={'link'} color={'brand.100'} rightIcon={<ExternalLinkIcon/>} size={'sm'}>
             <Link>Zobacz więcej
             </Link>
           </Button>
