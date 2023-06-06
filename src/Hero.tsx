@@ -6,7 +6,7 @@ export default function Hero() {
     return (
         <>
         <Show above='lg'>
-            <Box bgImage="tlo.png" bgSize={"cover"} bgRepeat={"no-repeat"}>
+            <Box bgImage="tlo.png" bgSize={"cover"} bgPos={"center"} bgRepeat={"no-repeat"}>
                 <Container maxW={'3xl'}>
                     <Stack w={"100%"} as={Box} textAlign={'center'} spacing={{ base: 8, md: 14 }} py={{ base: 20, md: 36 }}>
                         <Heading fontWeight={800} fontSize={{ base: '5xl', md: '6xl' }} lineHeight={'110%'} color={'white'}>Witajcie na mojej stronie!</Heading>
