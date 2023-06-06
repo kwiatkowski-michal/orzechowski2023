@@ -10,7 +10,7 @@ export default function SocialMedia() {
                 <SimpleGrid columns={{ base: 1, md: 2 }} spacing={10} justifyContent={"center"}>
                     <Box boxShadow='lg' bg={"white"} rounded={10}>
                         <Heading fontWeight={800} p={4}>Aktualności na <Text as={"span"} color={"blue.300"}>Twitterze</Text></Heading>
-                        <Box mb={2} height={"100%"}>
+                        <Box mb={2} >
                             <TwitterTimelineEmbed lang="pl" noHeader noScrollbar noBorders noFooter sourceType="profile" autoHeight screenName="orzechowski_mat"
                                 placeholder={<Box rounded={10}>
                                     <Box padding='6'>
