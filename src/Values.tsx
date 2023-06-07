@@ -67,7 +67,7 @@ import {
     return (
       <Box mb={10}>
         <Stack spacing={4} as={Container} maxW={'5xl'}>
-          <Heading fontWeight={'bold'}>
+          <Heading fontWeight={'extrabold'}>
             Short heading
           </Heading>
           <Text color={'gray.500'} fontSize={'lg'}>
