@@ -16,19 +16,21 @@ export default function SocialMedia() {
             <Container maxW={'5xl'} mb={10}>
                 <SimpleGrid columns={{ base: 1, md: 2 }} spacing={10} justifyContent={"center"}>
                     <Box boxShadow='lg' rounded={10}>
-                        <Heading fontWeight={800} p={4}>Aktualności na <Text as={'span'} position={'relative'}
-                            _after={{
-                                content: "''",
-                                width: 'full',
-                                height: useBreakpointValue({ base: '20%', md: '30%' }),
-                                position: 'absolute',
-                                bottom: 1,
-                                left: 0,
-                                bg: 'blue.300',
-                                zIndex: -1,
-                            }}>
-                            Twitterze
-                        </Text></Heading>
+                        <Heading fontWeight={800} p={4}>Aktualności na
+                            <Text as={'span'} position={'relative'}
+                                _after={{
+                                    content: "''",
+                                    width: 'full',
+                                    height: useBreakpointValue({ base: '20%', md: '30%' }),
+                                    position: 'absolute',
+                                    bottom: 1,
+                                    left: 0,
+                                    bg: 'blue.300',
+                                    zIndex: -1,
+                                }}>
+                                Twitterze
+                            </Text>
+                        </Heading>
                         <Box mb={2} >
                             <TwitterTimelineEmbed lang="pl" noHeader noScrollbar noBorders noFooter sourceType="profile" autoHeight screenName="orzechowski_mat"
                                 placeholder={<Box rounded={10}>
