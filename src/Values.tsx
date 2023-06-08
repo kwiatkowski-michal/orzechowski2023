@@ -10,7 +10,6 @@ import {
   Stack,
   Text,
   useBreakpointValue,
-  useColorMode,
   useColorModeValue,
 } from '@chakra-ui/react';
 import { ReactElement } from 'react';

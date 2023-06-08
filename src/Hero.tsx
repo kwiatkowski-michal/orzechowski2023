@@ -1,9 +1,8 @@
 import { ExternalLinkIcon } from "@chakra-ui/icons";
-import { Container, Stack, Heading, Button, Text, Box, Link, HStack, ButtonGroup, Wrap, WrapItem, useColorModeValue, Show, useBreakpointValue, IconButton, useColorMode, Card, CardBody, CardHeader } from "@chakra-ui/react";
+import { Container, Stack, Heading, Button, Text, Box, Link, Wrap, WrapItem, useColorModeValue, Show, IconButton, useColorMode, Card, CardBody, CardHeader } from "@chakra-ui/react";
 import IonIcon from "@reacticons/ionicons";
-import React from "react";
 
-import { FaFacebookSquare, FaInstagram, FaInstagramSquare, FaMoon, FaSun, FaTwitterSquare } from "react-icons/fa";
+import { FaFacebookSquare, FaInstagramSquare, FaMoon, FaSun, FaTwitterSquare } from "react-icons/fa";
 export default function Hero() {
     const { toggleColorMode, colorMode } = useColorMode();
     return (

@@ -11,7 +11,6 @@ import {
   useColorModeValue,
   useBreakpointValue,
 } from '@chakra-ui/react';
-import React from 'react';
 import { ReactElement } from 'react';
 import { FaEquals, FaHandshake, FaHandPeace } from 'react-icons/fa';
 interface FeatureProps {

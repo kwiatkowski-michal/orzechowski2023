@@ -1,16 +1,13 @@
-import { AddIcon, ExternalLinkIcon } from '@chakra-ui/icons';
+import { ExternalLinkIcon } from '@chakra-ui/icons';
 import {
   Box,
   Button,
-  ButtonGroup,
   Container,
-  IconButton,
   Image,
   Link,
   Show,
   Stack,
   Text,
-  useColorMode,
   useColorModeValue,
 } from '@chakra-ui/react';
 
