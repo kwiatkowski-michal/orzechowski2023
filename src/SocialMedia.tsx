@@ -5,14 +5,13 @@ import {useBreakpointValue} from '@chakra-ui/react';
 export default function SocialMedia() {
     return (
             <Container maxW={'5xl'} mb={10}>
-
                 <SimpleGrid columns={{ base: 1, md: 2 }} spacing={10}>
                     <Box shadow={"md"} rounded={15} pt={5} px={5}>
                         <Heading fontWeight={800} pb={5}>
                             Najnowsze <Text as={'span'} position={'relative'}  _before={{ content: "''", width: "full", height: useBreakpointValue({ base: "20%", md: "30%" }), position: "absolute", bottom: 1, left: 0, bg: "blue.300", zIndex: -1 }}>tweety</Text>
                         </Heading>
                         <Box pb={5}>
-                            <TwitterTimelineEmbed lang="pl" noHeader borderColor={"#000000"} noScrollbar noFooter sourceType="profile" options={{ height: "550" }} screenName="orzechowski_mat"
+                            <TwitterTimelineEmbed lang="pl" noHeader noScrollbar transparent noFooter sourceType="profile" options={{ height: "550" }} screenName="orzechowski_mat"
                                 placeholder={<Box rounded={10}>
                                     <Box padding='6'>
                                         <SkeletonCircle size='10' />

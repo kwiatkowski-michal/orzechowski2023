@@ -19,9 +19,10 @@
     }
   ],
   "start_url": ".",
-  "display": "standalone",
-  "theme_color": "#000000",
+  "theme_color": "#172815",
   "background_color": "#ffffff",
+  "orientation": "portrait",
+  "display": "standalone",
   "shortcuts": [
     {
       "name": "Zaobserwuj mnie na Instagramie",
