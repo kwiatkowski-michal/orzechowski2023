@@ -1,4 +1,4 @@
-import { ChakraProvider, ColorModeScript, extendTheme } from "@chakra-ui/react"
+import { ChakraProvider, ColorModeScript, extendTheme, type ThemeConfig } from "@chakra-ui/react"
 import * as React from "react"
 import * as ReactDOM from "react-dom/client"
 import { App } from "./App"
@@ -9,6 +9,11 @@ import '@fontsource-variable/manrope';
 const container = document.getElementById("root")
 if (!container) throw new Error('Failed to find the root element');
 const root = ReactDOM.createRoot(container)
+
+const config : ThemeConfig = {
+  initialColorMode: "dark",
+  useSystemColorMode: true,
+}
 
 const colors = {
   brand: {
@@ -22,7 +27,7 @@ const fonts = {
   body: 'Manrope Variable'
 }
 
-const theme = extendTheme({colors, fonts})
+const theme = extendTheme({colors, fonts, config})
 
 root.render(
   <React.StrictMode>

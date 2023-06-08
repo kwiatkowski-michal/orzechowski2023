@@ -10,10 +10,13 @@ import {
   Show,
   Stack,
   Text,
+  useColorMode,
   useColorModeValue,
 } from '@chakra-ui/react';
 
+
 export default function Footer() {
+
   return (
     <Box
       bg={useColorModeValue('gray.50', 'gray.900')}
@@ -28,13 +31,14 @@ export default function Footer() {
         align={{ base: 'center' }}>
 
         <Show above='md'>
+        
           <Text>Wykonanie: Michał Kwiatkowski</Text>
           <Link href={'https://www.lewica.org.pl'}><Image src='logolewica.svg' height={"1.5rem"} /></Link>
-          <Text color={"gray.700"}>Sfinansowano przez KW Nowa Lewica</Text>
+          <Text>Sfinansowano przez KW Nowa Lewica</Text>
         </Show>
         <Show below='md'>
           <Text>Wykonanie: Michał Kwiatkowski</Text>
-          <Button size='sm' rightIcon={<ExternalLinkIcon />} colorScheme='pink' variant='outline'><Link target='_blank' href={'https://www.lewica.org.pl'}>Sfinansowano przez KW Nowa Lewica</Link></Button>
+          <Button size='xs' rightIcon={<ExternalLinkIcon />} colorScheme='pink' variant='outline'><Link target='_blank' href={'https://www.lewica.org.pl'}>Sfinansowano przez KW Nowa Lewica</Link></Button>
         </Show>
       </Container>
     </Box>

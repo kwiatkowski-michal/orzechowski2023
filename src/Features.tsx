@@ -55,7 +55,7 @@ export default function FeaturesMain() {
             }}>
             wartości
           </Text></Heading>
-          <Text color={'gray.500'} fontSize={'lg'}>
+          <Text color={useColorModeValue("gray.500", "gray.300")} fontSize={'lg'}>
             Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
             nonumy eirmod tempor invidunt ut labore
           </Text>

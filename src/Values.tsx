@@ -10,6 +10,7 @@ import {
   Stack,
   Text,
   useBreakpointValue,
+  useColorMode,
   useColorModeValue,
 } from '@chakra-ui/react';
 import { ReactElement } from 'react';
@@ -33,7 +34,7 @@ const Card = ({ heading, description, icon, href }: CardProps) => {
     <Box
       maxW={{ base: 'full', md: '314px' }}
       w={'full'}
-      bg="white"
+      bg={useColorModeValue('white', 'gray.700')}
       rounded={'lg'}
       boxShadow={'md'}
       overflow="hidden"
@@ -46,7 +47,7 @@ const Card = ({ heading, description, icon, href }: CardProps) => {
           justify={'center'}
           color={'white'}
           rounded={'full'}
-          bg={useColorModeValue('gray.100', 'gray.700')}>
+          bg={useColorModeValue('gray.100', 'gray.500')}>
           {icon}
         </Flex>
         <Box mt={2}>
@@ -64,11 +65,13 @@ const Card = ({ heading, description, icon, href }: CardProps) => {
   );
 };
 
+
+
 export default function Values() {
   return (
     <Box mb={10}>
       <Stack spacing={4} as={Container} maxW={'5xl'}>
-        <Heading fontWeight={800}>Najwaniejsze <Text as={'span'} position={'relative'}
+        <Heading fontWeight={800}>Najważniejsze <Text as={'span'} position={'relative'}
             _after={{
               content: "''",
               width: 'full',
@@ -82,7 +85,7 @@ export default function Values() {
             postulaty
           </Text>
         </Heading>
-        <Text color={'gray.500'} fontSize={'lg'}>
+        <Text color={useColorModeValue("gray.500", "gray.300")} fontSize={'lg'}>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis
           obcaecati ut cupiditate pariatur, dignissimos, placeat amet officiis.
         </Text>
