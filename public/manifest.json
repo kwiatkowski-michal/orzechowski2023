@@ -21,5 +21,21 @@
   "start_url": ".",
   "display": "standalone",
   "theme_color": "#000000",
-  "background_color": "#ffffff"
+  "background_color": "#ffffff",
+  "shortcuts": [
+    {
+      "name": "Zaobserwuj mnie na Instagramie",
+      "short_name": "Instagram",
+      "description": "Zaobserwuj, by być na bieąco z moimi działaniami!",
+      "url": "https://www.instagram.com/mateusz.orzechowski/",
+      "icons": [{ "src": "ig.png", "sizes": "800x800" }]
+    },
+    {
+      "name": "Napisz do mnie na Messengerze!",
+      "short_name": "Messenger",
+      "description": "Masz pytanie? Napisz do mnie!",
+      "url": "https://m.me/112361920273367",
+      "icons": [{ "src": "mess.png", "sizes": "800x800" }]
+    }
+  ]
 }
