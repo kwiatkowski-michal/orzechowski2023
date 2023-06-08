@@ -80,7 +80,7 @@ export default function Values() {
               bg: 'brand.100',
               zIndex: -1,
             }}>
-            postulaty
+             postulaty
           </Text>
         </Heading>
         <Text color={'gray.500'} fontSize={'lg'}>
