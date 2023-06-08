@@ -30,7 +30,7 @@ export default function SocialMedia() {
                                 Twitterze
                             </Text>
                         </Heading>
-                        <Box mb={2} >
+                        <Box mb={2} height={"90%"}>
                             <TwitterTimelineEmbed lang="pl" noHeader noScrollbar noBorders noFooter sourceType="profile" autoHeight screenName="orzechowski_mat"
                                 placeholder={<Box rounded={10}>
                                     <Box padding='6'>

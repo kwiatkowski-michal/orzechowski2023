@@ -1,7 +1,8 @@
 import { ExternalLinkIcon } from "@chakra-ui/icons";
 import { Container, Stack, Heading, Button, Text, Box, Link, HStack, ButtonGroup, Wrap, WrapItem, useColorModeValue, Show, useBreakpointValue } from "@chakra-ui/react";
+import IonIcon from "@reacticons/ionicons";
 import React from "react";
-import { FaFacebook, FaFacebookSquare, FaInstagram, FaInstagramSquare, FaTwitter, FaTwitterSquare } from "react-icons/fa";
+import { FaFacebookSquare, FaInstagram, FaInstagramSquare, FaTwitterSquare } from "react-icons/fa";
 export default function Hero() {
     return (
         <>
@@ -23,13 +24,16 @@ export default function Hero() {
                                 alignSelf={'center'}>
                                 <Wrap spacing={4} justify={'center'}>
                                     <WrapItem>
-                                        <Button variant={'solid'} size={'lg'} colorScheme={'facebook'} leftIcon={<FaFacebookSquare />}>Facebook</Button>
+                                        <Button variant={'solid'} size={'lg'} colorScheme={'facebook'} leftIcon={<FaFacebookSquare />}><Link target="_blank" href="https://facebook.com/orzechowski.mat">Facebook</Link></Button>
                                     </WrapItem>
                                     <WrapItem>
-                                        <Button variant={'solid'} size={'lg'} colorScheme={'twitter'} leftIcon={<FaTwitterSquare />}>Twitter</Button>
+                                        <Button variant={'solid'} size={'lg'} colorScheme={'twitter'} leftIcon={<FaTwitterSquare />}><Link target="_blank" href="https://twitter.com/orzechowski_mat">Twitter</Link></Button>
                                     </WrapItem>
                                     <WrapItem>
-                                        <Button variant={'solid'} size={'lg'} colorScheme={'pink'} leftIcon={<FaInstagramSquare />}>Instagram</Button>
+                                        <Button variant={'solid'} size={'lg'} colorScheme={'pink'} leftIcon={<FaInstagramSquare />}><Link target="_blank" href="https://instagram.com/mateusz.orzechowski">Instagram</Link></Button>
+                                    </WrapItem>
+                                    <WrapItem>
+                                        <Button variant={'solid'} size={'lg'} color="white" bgColor={"black"} _hover={{ bg: 'gray.700'}} leftIcon={<IonIcon name="logo-tiktok"></IonIcon>}><Link target="_blank" href="https://tiktok.com/@orzechowski_mat">TikTok</Link></Button>
                                     </WrapItem>
                                 </Wrap>
                             </Stack>
