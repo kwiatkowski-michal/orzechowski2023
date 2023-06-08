@@ -16,8 +16,7 @@ export default function SocialMedia() {
             <Container maxW={'5xl'} mb={10}>
                 <SimpleGrid columns={{ base: 1, md: 2 }} spacing={10} justifyContent={"center"}>
                     <Box boxShadow='lg' rounded={10}>
-                        <Heading fontWeight={800} p={4}>Aktualności na 
-                            <Text as={'span'} position={'relative'}
+                        <Heading fontWeight={800} p={4}>Aktualności na <Text as={'span'} position={'relative'}
                                 _after={{
                                     content: "''",
                                     width: 'full',
@@ -28,7 +27,7 @@ export default function SocialMedia() {
                                     bg: 'blue.300',
                                     zIndex: -1,
                                 }}>
-                                 Twitterze
+                                Twitterze
                             </Text>
                         </Heading>
                         <Box mb={2} >

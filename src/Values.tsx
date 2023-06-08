@@ -68,8 +68,7 @@ export default function Values() {
   return (
     <Box mb={10}>
       <Stack spacing={4} as={Container} maxW={'5xl'}>
-        <Heading fontWeight={800}>Najwaniejsze
-          <Text as={'span'} position={'relative'}
+        <Heading fontWeight={800}>Najwaniejsze <Text as={'span'} position={'relative'}
             _after={{
               content: "''",
               width: 'full',
@@ -80,7 +79,7 @@ export default function Values() {
               bg: 'brand.100',
               zIndex: -1,
             }}>
-             postulaty
+            postulaty
           </Text>
         </Heading>
         <Text color={'gray.500'} fontSize={'lg'}>
