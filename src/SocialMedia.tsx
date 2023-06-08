@@ -1,52 +1,18 @@
-import { Box, Card, CardBody, CardHeader, Container, Flex, Heading, Show, SimpleGrid, Skeleton, SkeletonCircle, SkeletonText, Text, color, useColorMode, useColorModeValue } from "@chakra-ui/react";
-import { FacebookProvider, Page } from 'react-facebook';
-import { TwitterOnAirButton, TwitterTimelineEmbed } from "react-twitter-embed";
-import {
-    Button,
-
-    Image,
-    Stack,
-
-    useBreakpointValue,
-} from '@chakra-ui/react';
+import { Box, Container, Heading, SimpleGrid, SkeletonCircle, SkeletonText, Text, useColorModeValue } from "@chakra-ui/react";
+import { TwitterTimelineEmbed } from "react-twitter-embed";
+import {useBreakpointValue} from '@chakra-ui/react';
 
 export default function SocialMedia() {
-    const { colorMode } = useColorMode()
-    console.log(colorMode)
     return (
-        <>
             <Container maxW={'5xl'} mb={10}>
-                <SimpleGrid columns={{ base: 1, md: 2 }} spacing={10} justifyContent={"center"}>
-                    <Card bg={"white"}>
 
-                        <Heading fontWeight={800} paddingLeft={7} paddingTop={5} color={"black"} >Najnowsze
-                            <Text as={'span'} position={'relative'}>
-                                <Text as={"span"} color={"twitter.500"}> Tweety</Text>
-                            </Text>
+                <SimpleGrid columns={{ base: 1, md: 2 }} spacing={10}>
+                    <Box shadow={"md"} rounded={15} pt={5} px={5}>
+                        <Heading fontWeight={800} pb={5}>
+                            Najnowsze <Text as={'span'} position={'relative'}  _before={{ content: "''", width: "full", height: useBreakpointValue({ base: "20%", md: "30%" }), position: "absolute", bottom: 1, left: 0, bg: "blue.300", zIndex: -1 }}>tweety</Text>
                         </Heading>
-
-                        <CardBody>
-                            <TwitterTimelineEmbed lang="pl" noHeader noScrollbar noBorders noFooter sourceType="profile" autoHeight screenName="orzechowski_mat"
-                                placeholder={<Box rounded={10}>
-                                    <Box padding='6'>
-                                        <SkeletonCircle size='10' />
-                                        <SkeletonText mt='4' noOfLines={7} spacing='4' />
-                                    </Box>
-                                    <Box padding='6'>
-                                        <SkeletonCircle size='10' />
-                                        <SkeletonText mt='4' noOfLines={5} spacing='4' />
-                                    </Box>
-                                </Box>}
-                            />
-                        </CardBody>
-                    </Card>
-                    {/* <Box boxShadow='lg' rounded={10} bgColor={"white"}>
-                        <Heading fontWeight={800} color={"black"} p={4}>Aktualności na <Text as={'span'} position={'relative'}>
-                                <Text as={"span"} color={"twitter.500"}>Twitterze</Text>
-                            </Text>
-                        </Heading>
-                        <Box mb={2} height={"90%"}>
-                            <TwitterTimelineEmbed lang="pl" noHeader noScrollbar noBorders noFooter sourceType="profile" autoHeight screenName="orzechowski_mat"
+                        <Box pb={5}>
+                            <TwitterTimelineEmbed lang="pl" noHeader borderColor={"#000000"} noScrollbar noFooter sourceType="profile" options={{ height: "550" }} screenName="orzechowski_mat"
                                 placeholder={<Box rounded={10}>
                                     <Box padding='6'>
                                         <SkeletonCircle size='10' />
@@ -59,7 +25,7 @@ export default function SocialMedia() {
                                 </Box>}
                             />
                         </Box>
-                    </Box> */}
+                    </Box>
                     <Box>
                         <Heading fontWeight={800} py={4}>Lorem ipsum dolor.</Heading>
                         <Box color={useColorModeValue("gray.500", "gray.300")} fontSize={'lg'}>
@@ -68,6 +34,5 @@ export default function SocialMedia() {
                     </Box>
                 </SimpleGrid>
             </Container>
-        </>
     )
 }

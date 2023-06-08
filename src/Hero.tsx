@@ -19,15 +19,15 @@ export default function Hero() {
         left={4}
         onClick={toggleColorMode} icon={colorMode === "dark" ? <FaSun /> : <FaMoon />}
       />
-            <Box bgColor={useColorModeValue("white","gray.800")}>
+            <Box bgColor={useColorModeValue("brand.100","gray.800")}>
                 <Container maxW={'4xl'}>
                     <Stack w={"100%"} as={Box} textAlign={'center'} spacing={{ base: 8, md: 14 }} py={{ base: 20, md: 36 }}>
-                        <Card p={20} bg={useColorModeValue("brand.100","gray.700")}>
+                        <Card p={20} boxShadow={"2xl"} bg={useColorModeValue("white","gray.700")}>
                             <CardHeader>
-                            <Heading fontWeight={800} fontSize={{ base: '5xl', md: '6xl' }} lineHeight={'110%'} color={"white"}>Witajcie na mojej stronie!</Heading>
+                            <Heading fontWeight={800} fontSize={{ base: '5xl', md: '6xl' }} lineHeight={'110%'} >Witajcie na mojej stronie!</Heading>
                             </CardHeader>
                             <CardBody>
-                        <Text color={useColorModeValue('white', 'gray.100')}>
+                        <Text color={useColorModeValue('gray.500', 'gray.100')}>
                             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus commodi tenetur autem iure,
                             natus aliquam omnis adipisci voluptas consequatur reiciendis ea dolor et eveniet
                             doloribus libero a quidem quia. Consequuntur et mollitia labore tempore facere illum
@@ -52,7 +52,7 @@ export default function Hero() {
                                         <Button variant={'solid'} size={'lg'} colorScheme={'pink'} leftIcon={<FaInstagramSquare />}><Link target="_blank" href="https://instagram.com/mateusz.orzechowski">Instagram</Link></Button>
                                     </WrapItem>
                                     <WrapItem>
-                                        <Button variant={'solid'} size={'lg'} color={useColorModeValue('white', 'black')} bgColor={useColorModeValue('black', 'gray.200')} _hover={{ bg: 'gray.700'}} leftIcon={<IonIcon name="logo-tiktok"></IonIcon>}><Link target="_blank" href="https://tiktok.com/@orzechowski_mat">TikTok</Link></Button>
+                                        <Button variant={'solid'} size={'lg'} color={useColorModeValue('white', 'black')} bgColor={useColorModeValue('black', 'gray.200')} _hover={{ bg: useColorModeValue('gray.700', 'gray.400')}} leftIcon={<IonIcon name="logo-tiktok"></IonIcon>}><Link target="_blank" href="https://tiktok.com/@orzechowski_mat">TikTok</Link></Button>
                                     </WrapItem>
                                 </Wrap>
                             </Stack>
