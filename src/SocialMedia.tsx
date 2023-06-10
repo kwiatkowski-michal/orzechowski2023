@@ -24,7 +24,7 @@ export default function SocialMedia() {
     return (
             <Container maxW={'5xl'} mb={10}>
                 <SimpleGrid columns={{ base: 1, md: 2 }} spacing={10}>
-                    <Box shadow={useColorModeValue("md", "none")} rounded={15} pt={5} px={5}>
+                    <Box shadow={useColorModeValue("md", "none")} rounded={15} >
                         <Heading fontWeight={800} pb={5}>
                             Najnowsze <Text as={'span'} position={'relative'}  _before={{ content: "''", width: "full", height: useBreakpointValue({ base: "20%", md: "30%" }), position: "absolute", bottom: 1, left: 0, bg: "blue.300", zIndex: -1 }}>tweety</Text>
                         </Heading>
