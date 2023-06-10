@@ -42,22 +42,22 @@ export default function Hero() {
                                 alignSelf={'center'}>
                                 <Wrap spacing={4} justify={'center'}>
                                     <WrapItem>
-                                        <Button variant={'solid'} size={'lg'} colorScheme={'facebook'} leftIcon={<FaFacebookSquare />}><Link target="_blank" href="https://facebook.com/orzechowski.mat">Facebook</Link></Button>
+                                        <Link target="_blank" href="https://facebook.com/orzechowski.mat"><Button variant={'solid'} size={'lg'} colorScheme={'facebook'} leftIcon={<FaFacebookSquare />}>Facebook</Button></Link>
                                     </WrapItem>
                                     <WrapItem>
-                                        <Button variant={'solid'} size={'lg'} colorScheme={'twitter'} leftIcon={<FaTwitterSquare />}><Link target="_blank" href="https://twitter.com/orzechowski_mat">Twitter</Link></Button>
+                                        <Link target="_blank" href="https://twitter.com/orzechowski_mat"><Button variant={'solid'} size={'lg'} colorScheme={'twitter'} leftIcon={<FaTwitterSquare />}>Twitter</Button></Link>
                                     </WrapItem>
                                     <WrapItem>
-                                        <Button variant={'solid'} size={'lg'} colorScheme={'pink'} leftIcon={<FaInstagramSquare />}><Link target="_blank" href="https://instagram.com/mateusz.orzechowski">Instagram</Link></Button>
+                                        <Link target="_blank" href="https://instagram.com/mateusz.orzechowski"><Button variant={'solid'} size={'lg'} colorScheme={'pink'} leftIcon={<FaInstagramSquare />}>Instagram</Button></Link>
                                     </WrapItem>
                                     <WrapItem>
-                                        <Button variant={'solid'} size={'lg'} color={useColorModeValue('white', 'black')} bgColor={useColorModeValue('black', 'gray.200')} _hover={{ bg: useColorModeValue('gray.700', 'gray.400')}} leftIcon={<IonIcon name="logo-tiktok"></IonIcon>}><Link target="_blank" href="https://tiktok.com/@orzechowski_mat">TikTok</Link></Button>
+                                        <Link target="_blank" href="https://tiktok.com/@orzechowski_mat"><Button variant={'solid'} size={'lg'} color={useColorModeValue('white', 'black')} bgColor={useColorModeValue('black', 'gray.200')} _hover={{ bg: useColorModeValue('gray.700', 'gray.400')}} leftIcon={<IonIcon name="logo-tiktok"></IonIcon>}>TikTok</Button></Link>
                                     </WrapItem>
                                 </Wrap>
                             </Stack>
-                            <Button variant={'solid'} colorScheme={"gray"} rightIcon={<ExternalLinkIcon />} size={'sm'}>
-                                <Link href={'https://m.me/112361920273367'}>Napisz na Messengerze!</Link>
-                            </Button>
+                            
+                                <Link href={'https://m.me/112361920273367'}><Button variant={'solid'} colorScheme={"gray"} rightIcon={<ExternalLinkIcon />} size={'sm'}>Napisz na Messengerze!</Button></Link>
+                            
                             
                         </Stack>
                         </CardBody>

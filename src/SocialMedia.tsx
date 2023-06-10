@@ -1,8 +1,25 @@
-import { Box, Container, Heading, Link, SimpleGrid, SkeletonCircle, SkeletonText, Text, useColorMode, useColorModeValue, useToast } from "@chakra-ui/react";
+import { Box, Button, Center, Container, Heading, Link, SimpleGrid, SkeletonCircle, SkeletonText, Text, useColorMode, useColorModeValue, useToast } from "@chakra-ui/react";
 import { TwitterTimelineEmbed } from "react-twitter-embed";
 import {useBreakpointValue} from '@chakra-ui/react';
 import { useEffect } from "react";
 import { ExternalLinkIcon } from "@chakra-ui/icons";
+import { FaTwitterSquare } from "react-icons/fa";
+
+
+export function TwitterButton() {
+    return (
+      <Center p={5}>
+        <Link w={'full'} maxW={'md'} href="https://twitter.com/orzechowski_mat"><Button
+          w={'full'}
+          colorScheme={'twitter'}
+          leftIcon={<FaTwitterSquare />}>
+          <Center>
+            <Text>Zaobserwuj mnie na Twitterze</Text>
+          </Center>
+        </Button></Link>
+      </Center>
+    );
+  }
 
 export default function SocialMedia() {
     const toast = useToast()
@@ -24,12 +41,12 @@ export default function SocialMedia() {
     return (
             <Container maxW={'5xl'} mb={10}>
                 <SimpleGrid columns={{ base: 1, md: 2 }} spacing={10}>
-                    <Box shadow={useColorModeValue("md", "none")} rounded={15} >
+                    <Box rounded={15} py={5}>
                         <Heading fontWeight={800} pb={5}>
                             Najnowsze <Text as={'span'} position={'relative'}  _before={{ content: "''", width: "full", height: useBreakpointValue({ base: "20%", md: "30%" }), position: "absolute", bottom: 1, left: 0, bg: "blue.300", zIndex: -1 }}>tweety</Text>
                         </Heading>
-                        <Box pb={5}>
-                            <Box p={1} bgColor={"white"} rounded={10} border={"gray"}>
+                        <Box>
+                            <Box p={1} bgColor={"white"} rounded={10} shadow={"md"}>
                             <TwitterTimelineEmbed lang="pl" noHeader noScrollbar noBorders noFooter sourceType="profile" options={{ height: "550" }} screenName="orzechowski_mat"
                                 placeholder={<Box rounded={10}>
                                     <Box padding='6'>
@@ -42,6 +59,7 @@ export default function SocialMedia() {
                                     </Box>
                                 </Box>}
                             />
+                            <TwitterButton />
                             </Box>
                         </Box>
                     </Box>
