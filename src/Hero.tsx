@@ -77,7 +77,7 @@ export default function Hero() {
         left={4}
         onClick={toggleColorMode} icon={colorMode === "dark" ? <FaSun /> : <FaMoon />}
       />
-            <Box bgColor={useColorModeValue("brand.100","gray.700")}>
+            <Box bgColor={useColorModeValue("brand.100","gray.800")}>
                 <Container maxW={'4xl'}>
                     <Stack w={"100%"} as={Box} textAlign={'center'} spacing={{ base: 8, md: 14 }} py={{ base: 20, md: 36 }}>
                         <Heading fontWeight={800} fontSize={{ base: '5xl', md: '6xl' }} lineHeight={'110%'} color={"white"}>Witajcie na mojej stronie!</Heading>
