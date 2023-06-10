@@ -1,17 +1,36 @@
-import { Box, Container, Heading, SimpleGrid, SkeletonCircle, SkeletonText, Text, useColorModeValue } from "@chakra-ui/react";
+import { Box, Container, Heading, Link, SimpleGrid, SkeletonCircle, SkeletonText, Text, useColorMode, useColorModeValue, useToast } from "@chakra-ui/react";
 import { TwitterTimelineEmbed } from "react-twitter-embed";
 import {useBreakpointValue} from '@chakra-ui/react';
+import { useEffect } from "react";
+import { ExternalLinkIcon } from "@chakra-ui/icons";
 
 export default function SocialMedia() {
+    const toast = useToast()
+    const id = "cookie"
+    useEffect(() => { 
+        if (!toast.isActive(id)) {
+        toast({
+            id: id,
+        title: 'Polityka prywatności',
+        description: "Przeglądając stronę zgadzasz się na wykorzystanie plików cookies",
+        status: 'info',
+        variant: "solid",
+        duration: 5000,
+        position: 'bottom-right',
+        isClosable: true,
+      })
+    }
+    }, [])
     return (
             <Container maxW={'5xl'} mb={10}>
                 <SimpleGrid columns={{ base: 1, md: 2 }} spacing={10}>
-                    <Box shadow={"md"} rounded={15} pt={5} px={5}>
+                    <Box shadow={useColorModeValue("md", "none")} rounded={15} pt={5} px={5}>
                         <Heading fontWeight={800} pb={5}>
                             Najnowsze <Text as={'span'} position={'relative'}  _before={{ content: "''", width: "full", height: useBreakpointValue({ base: "20%", md: "30%" }), position: "absolute", bottom: 1, left: 0, bg: "blue.300", zIndex: -1 }}>tweety</Text>
                         </Heading>
                         <Box pb={5}>
-                            <TwitterTimelineEmbed lang="pl" noHeader noScrollbar transparent noFooter sourceType="profile" options={{ height: "550" }} screenName="orzechowski_mat"
+                            <Box p={1} bgColor={"white"} rounded={10} border={"gray"}>
+                            <TwitterTimelineEmbed lang="pl" noHeader noScrollbar noBorders noFooter sourceType="profile" options={{ height: "550" }} screenName="orzechowski_mat"
                                 placeholder={<Box rounded={10}>
                                     <Box padding='6'>
                                         <SkeletonCircle size='10' />
@@ -23,6 +42,7 @@ export default function SocialMedia() {
                                     </Box>
                                 </Box>}
                             />
+                            </Box>
                         </Box>
                     </Box>
                     <Box>

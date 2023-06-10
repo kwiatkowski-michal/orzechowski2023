@@ -11,11 +11,16 @@ if (!container) throw new Error('Failed to find the root element');
 const root = ReactDOM.createRoot(container)
 
 const config : ThemeConfig = {
-  initialColorMode: "dark",
+  initialColorMode: "light",
   useSystemColorMode: true,
 }
 
+
+
 const colors = {
+  gray: {
+    800: "#000"
+  },
   brand: {
     100: '#339933',
     200: '#33CC33'

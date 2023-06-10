@@ -21,7 +21,7 @@ export default function Hero() {
             <Box bgColor={useColorModeValue("brand.100","gray.800")}>
                 <Container maxW={'4xl'}>
                     <Stack w={"100%"} as={Box} textAlign={'center'} spacing={{ base: 8, md: 14 }} py={{ base: 20, md: 36 }}>
-                        <Card p={20} boxShadow={"2xl"} bg={useColorModeValue("white","gray.700")}>
+                        <Card p={20} boxShadow={"2xl"} bg={useColorModeValue("white","gray.900")}>
                             <CardHeader>
                             <Heading fontWeight={800} fontSize={{ base: '5xl', md: '6xl' }} lineHeight={'110%'} >Witajcie na mojej stronie!</Heading>
                             </CardHeader>

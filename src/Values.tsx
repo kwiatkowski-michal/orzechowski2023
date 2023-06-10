@@ -33,7 +33,7 @@ const Card = ({ heading, description, icon, href }: CardProps) => {
     <Box
       maxW={{ base: 'full', md: '314px' }}
       w={'full'}
-      bg={useColorModeValue('white', 'gray.700')}
+      bg={useColorModeValue('white', 'gray.900')}
       rounded={'lg'}
       boxShadow={'md'}
       overflow="hidden"
