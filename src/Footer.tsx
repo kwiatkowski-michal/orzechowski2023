@@ -29,7 +29,7 @@ export default function Footer() {
 
         <Show above='md'>
         
-          <Text>Wykonanie: Michał Kwiatkowski</Text>
+          <Text>Wykonanie: <Link href='https://kwiatkowskimichal.tech'>Michał Kwiatkowski</Link></Text>
           <Link href={'https://www.lewica.org.pl'}><Image src='logolewica.svg' height={"1.5rem"} /></Link>
           {/* <Text>Sfinansowano przez KW Nowa Lewica</Text> */}
         </Show>

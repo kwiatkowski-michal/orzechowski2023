@@ -89,9 +89,9 @@ export default function FeaturesMain() {
         <Flex boxShadow={"xl"} rounded={'xl'}>
           <Image
             rounded={'md'}
-            alt={'feature image'}
+            alt={'Mateusz Orzechowski'}
             src={
-              '/background.jpeg'
+              '/image1.jpeg'
             }
             objectFit={'cover'}
           />
