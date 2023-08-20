@@ -33,7 +33,7 @@ const Card = ({ heading, description, icon, href }: CardProps) => {
     <Box
       maxW={{ base: 'full', md: '314px' }}
       w={'full'}
-      bg={useColorModeValue('white', 'gray.900')}
+      bg={useColorModeValue('brand.300', 'gray.900')}
       rounded={'lg'}
       boxShadow={'md'}
       overflow="hidden"
@@ -55,7 +55,7 @@ const Card = ({ heading, description, icon, href }: CardProps) => {
             {description}
           </Text>
         </Box>
-        <Button variant={'link'} color={'brand.100'} rightIcon={<ExternalLinkIcon />} size={'sm'}>
+        <Button variant={'link'} color={'brand.200'} rightIcon={<ExternalLinkIcon />} size={'sm'}>
           <Link>Zobacz więcej
           </Link>
         </Button>
@@ -78,7 +78,7 @@ export default function Values() {
               position: 'absolute',
               bottom: 1,
               left: 0,
-              bg: 'brand.100',
+              bg: 'brand.200',
               zIndex: -1,
             }}>
             postulaty

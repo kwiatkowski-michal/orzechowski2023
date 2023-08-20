@@ -2,7 +2,7 @@ import { ExternalLinkIcon } from "@chakra-ui/icons";
 import { Container, Stack, Heading, Button, Text, Box, Link, Wrap, WrapItem, useColorModeValue, Show, IconButton, useColorMode, Card, CardBody, CardHeader } from "@chakra-ui/react";
 import IonIcon from "@reacticons/ionicons";
 
-import { FaFacebookSquare, FaInstagramSquare, FaMoon, FaSun, FaTwitterSquare } from "react-icons/fa";
+import { FaFacebookSquare, FaInstagramSquare, FaMoon, FaSun, FaTwitter, FaTwitterSquare } from "react-icons/fa";
 export default function Hero() {
     const { toggleColorMode, colorMode } = useColorMode();
     return (
@@ -22,10 +22,10 @@ export default function Hero() {
                         <Stack w={"100%"} as={Box} textAlign={'center'} spacing={{ base: 8, md: 14 }} py={{ base: 20, md: 36 }}>
                             <Card p={20} boxShadow={"2xl"} bg={useColorModeValue("white", "gray.900")}>
                                 <CardHeader>
-                                    <Heading fontWeight={800} fontSize={{ base: '5xl', md: '6xl' }} lineHeight={'110%'} >Witajcie na mojej stronie!</Heading>
+                                    <Heading fontWeight={700} fontSize={{ base: '5xl', md: '6xl' }} lineHeight={'110%'} >WITAJCIE NA MOJEJ STRONIE!</Heading>
                                 </CardHeader>
                                 <CardBody>
-                                    <Text color={useColorModeValue('gray.500', 'gray.100')}>
+                                    <Text fontWeight={400} color={useColorModeValue('gray.500', 'gray.100')}>
                                         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus commodi tenetur autem iure,
                                         natus aliquam omnis adipisci voluptas consequatur reiciendis ea dolor et eveniet
                                         doloribus libero a quidem quia. Consequuntur et mollitia labore tempore facere illum
@@ -44,7 +44,7 @@ export default function Hero() {
                                                     <Link target="_blank" href="https://facebook.com/orzechowski.mat"><Button variant={'solid'} size={'lg'} colorScheme={'facebook'} leftIcon={<FaFacebookSquare />}>Facebook</Button></Link>
                                                 </WrapItem>
                                                 <WrapItem>
-                                                    <Link target="_blank" href="https://twitter.com/orzechowski_mat"><Button variant={'solid'} size={'lg'} colorScheme={'twitter'} leftIcon={<FaTwitterSquare />}>Twitter</Button></Link>
+                                                    <Link target="_blank" href="https://x.com/orzechowski_mat"><Button variant={'solid'} size={'lg'} color={useColorModeValue('white', 'black')} bgColor={useColorModeValue('black', 'gray.200')} _hover={{ bg: useColorModeValue('gray.700', 'gray.400') }} leftIcon={<FaTwitter />}>X</Button></Link>
                                                 </WrapItem>
                                                 <WrapItem>
                                                     <Link target="_blank" href="https://instagram.com/mateusz.orzechowski"><Button variant={'solid'} size={'lg'} colorScheme={'pink'} leftIcon={<FaInstagramSquare />}>Instagram</Button></Link>
@@ -75,7 +75,7 @@ export default function Hero() {
                 <Box bgColor={useColorModeValue("brand.100", "gray.900")}>
                     <Container maxW={'4xl'}>
                         <Stack w={"100%"} as={Box} textAlign={'center'} spacing={{ base: 8, md: 14 }} py={{ base: 20, md: 36 }}>
-                            <Heading fontWeight={800} fontSize={{ base: '5xl', md: '6xl' }} lineHeight={'110%'} color={"white"}>Witajcie na mojej stronie!</Heading>
+                            <Heading fontWeight={700} fontSize={{ base: '5xl', md: '6xl' }} lineHeight={'110%'} color={"white"}>Witajcie na mojej stronie!</Heading>
                             <Text color={useColorModeValue('white', 'gray.300')}>
                                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus commodi tenetur autem iure,
                                 natus aliquam omnis adipisci voluptas consequatur reiciendis ea dolor et eveniet

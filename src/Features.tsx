@@ -49,7 +49,7 @@ export default function FeaturesMain() {
               position: 'absolute',
               bottom: 1,
               left: 0,
-              bg: 'brand.100',
+              bg: 'brand.200',
               zIndex: -1,
             }}>
             wartości

@@ -2,9 +2,6 @@ import { Box, Button, Center, Container, Heading, Link, SimpleGrid, SkeletonCirc
 import { TwitterTimelineEmbed } from "react-twitter-embed";
 import {useBreakpointValue} from '@chakra-ui/react';
 import { useEffect } from "react";
-import { ExternalLinkIcon } from "@chakra-ui/icons";
-import { FaTwitterSquare } from "react-icons/fa";
-
 
 export function TwitterButton() {
     return (
@@ -12,9 +9,10 @@ export function TwitterButton() {
         <Link w={'full'} maxW={'md'} href="https://twitter.com/orzechowski_mat"><Button
           w={'full'}
           colorScheme={'twitter'}
-          leftIcon={<FaTwitterSquare />}>
+        //   leftIcon={""}
+        >
           <Center>
-            <Text>Zaobserwuj mnie na Twitterze</Text>
+            <Text>Zaobserwuj mnie na X</Text>
           </Center>
         </Button></Link>
       </Center>
@@ -42,8 +40,8 @@ export default function SocialMedia() {
             <Container maxW={'5xl'} mb={10}>
                 <SimpleGrid columns={{ base: 1, md: 2 }} spacing={10}>
                     <Box rounded={15} py={5}>
-                        <Heading fontWeight={800} pb={5}>
-                            Najnowsze <Text as={'span'} position={'relative'}  _before={{ content: "''", width: "full", height: useBreakpointValue({ base: "20%", md: "30%" }), position: "absolute", bottom: 1, left: 0, bg: "blue.300", zIndex: -1 }}>tweety</Text>
+                        <Heading fontWeight={700} pb={5}>
+                            Najnowsze <Text as={'span'} position={'relative'}  _before={{ content: "''", width: "full", height: useBreakpointValue({ base: "20%", md: "30%" }), position: "absolute", bottom: 1, left: 0, bg: "brand.200", zIndex: -1 }}>posty</Text>
                         </Heading>
                         <Box>
                             <Box p={1} bgColor={"white"} rounded={10} shadow={"md"}>
@@ -64,7 +62,7 @@ export default function SocialMedia() {
                         </Box>
                     </Box>
                     <Box>
-                        <Heading fontWeight={800} py={4}>Lorem ipsum dolor.</Heading>
+                        <Heading fontWeight={700} py={4}>Lorem ipsum dolor.</Heading>
                         <Box color={useColorModeValue("gray.500", "gray.300")} fontSize={'lg'}>
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, explicabo dignissimos quod placeat quae eius velit doloremque cum ullam blanditiis tempore totam fuga odio! Delectus praesentium temporibus in eos voluptate dicta fugiat? Sit quidem aperiam dolorum neque cum inventore non ipsam, possimus officia ullam sint itaque distinctio! Porro pariatur rerum iste veniam dolorum officia consequatur. Magnam at facilis saepe modi, reprehenderit exercitationem suscipit veniam dolore ullam nostrum rerum tempore beatae, laborum possimus illo explicabo nulla quidem! Debitis laborum modi amet recusandae soluta sapiente distinctio tempora, tenetur omnis deserunt? Porro quia ipsum fuga sint quasi possimus, aliquid ab quaerat modi sed facere, temporibus ipsa laborum debitis nam eius quis voluptates in autem sunt nesciunt accusamus. Nemo esse asperiores voluptatum rerum nostrum adipisci porro, minima, inventore iste blanditiis neque quos ullam itaque suscipit eligendi qui voluptatibus ab maxime laborum? Fugit earum debitis consequuntur maiores rem illo minima voluptates rerum vitae incidunt officia culpa.
                         </Box>

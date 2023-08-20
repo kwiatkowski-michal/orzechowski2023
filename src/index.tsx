@@ -3,7 +3,7 @@ import * as React from "react"
 import * as ReactDOM from "react-dom/client"
 import { App } from "./App"
 import * as serviceWorker from "./serviceWorker"
-import '@fontsource-variable/manrope';
+import '@fontsource/poppins';
 
 const container = document.getElementById("root")
 if (!container) throw new Error('Błąd serwera. Zgłoś to na www.kwiatkowskimichal.tech');
@@ -19,14 +19,15 @@ const colors = {
     800: "#000"
   },
   brand: {
-    100: '#339933',
-    200: '#33CC33'
+    100: '#e62846',
+    200: '#0ea86a',
+    300: "f6e9e5"
 }
 }
 
 const fonts = { 
-  heading: 'Manrope Variable',
-  body: 'Manrope Variable'
+  heading: 'Poppins',
+  body: 'Poppins'
 }
 
 const theme = extendTheme({colors, fonts, config})
