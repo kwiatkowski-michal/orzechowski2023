@@ -10,6 +10,7 @@ import {
   Icon,
   useColorModeValue,
   useBreakpointValue,
+  Box,
 } from '@chakra-ui/react';
 import { ReactElement } from 'react';
 import { FaEquals, FaHandshake, FaHandPeace } from 'react-icons/fa';
@@ -38,23 +39,13 @@ const Feature = ({ text, icon, iconBg }: FeatureProps) => {
 
 export default function FeaturesMain() {
   return (
+    <Box bgColor={useColorModeValue("brand.300", "black")}>
     <Container maxW={'5xl'} py={12}>
       <SimpleGrid columns={{ base: 1, md: 2 }} spacing={10}>
         <Stack spacing={4}>
-          <Heading fontWeight={800}>Moje <Text as={'span'} position={'relative'}
-            _after={{
-              content: "''",
-              width: 'full',
-              height: useBreakpointValue({ base: '20%', md: '30%' }),
-              position: 'absolute',
-              bottom: 1,
-              left: 0,
-              bg: 'brand.200',
-              zIndex: -1,
-            }}>
-            wartości
-          </Text></Heading>
-          <Text color={useColorModeValue("gray.500", "gray.300")} fontSize={'lg'}>
+          <Heading fontWeight={700} color={useColorModeValue("brand.200", "gray.000")}>Moje 
+            wartości</Heading>
+          <Text color={useColorModeValue("brand.200", "gray.300")} fontSize={'lg'}>
             Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
             nonumy eirmod tempor invidunt ut labore
           </Text>
@@ -62,7 +53,7 @@ export default function FeaturesMain() {
             spacing={4}
             divider={
               <StackDivider
-                borderColor={useColorModeValue('gray.100', 'gray.700')}
+                borderColor={useColorModeValue('brand.200', 'gray.700')}
               />
             }>
             <Feature
@@ -86,9 +77,9 @@ export default function FeaturesMain() {
             />
           </Stack>
         </Stack>
-        <Flex boxShadow={"xl"} rounded={'xl'}>
+        <Flex boxShadow={"xl"}>
           <Image
-            rounded={'md'}
+
             alt={'Mateusz Orzechowski'}
             src={
               '/image1.jpeg'
@@ -98,5 +89,6 @@ export default function FeaturesMain() {
         </Flex>
       </SimpleGrid>
     </Container>
+    </Box>
   );
 }

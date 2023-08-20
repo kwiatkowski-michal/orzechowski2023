@@ -37,14 +37,15 @@ export default function SocialMedia() {
     }
     }, [])
     return (
-            <Container maxW={'5xl'} mb={10}>
-                <SimpleGrid columns={{ base: 1, md: 2 }} spacing={10}>
-                    <Box rounded={15} py={5}>
+      <Box bgColor={useColorModeValue('brand.300', 'black')}>
+            <Container maxW={'5xl'} pb={10}>
+                <SimpleGrid bgColor={useColorModeValue('brand.300', 'black')} columns={{ base: 1, md: 2 }} spacing={10}>
+                    <Box py={5}>
                         <Heading fontWeight={700} pb={5}>
                             Najnowsze <Text as={'span'} position={'relative'}  _before={{ content: "''", width: "full", height: useBreakpointValue({ base: "20%", md: "30%" }), position: "absolute", bottom: 1, left: 0, bg: "brand.200", zIndex: -1 }}>posty</Text>
                         </Heading>
                         <Box>
-                            <Box p={1} bgColor={"white"} rounded={10} shadow={"md"}>
+                            <Box p={1} bgColor={"white"} shadow={"lg"}>
                             <TwitterTimelineEmbed lang="pl" noHeader noScrollbar noBorders noFooter sourceType="profile" options={{ height: "550" }} screenName="orzechowski_mat"
                                 placeholder={<Box rounded={10}>
                                     <Box padding='6'>
@@ -69,5 +70,6 @@ export default function SocialMedia() {
                     </Box>
                 </SimpleGrid>
             </Container>
+            </Box>
     )
 }

@@ -34,7 +34,6 @@ const Card = ({ heading, description, icon, href }: CardProps) => {
       maxW={{ base: 'full', md: '314px' }}
       w={'full'}
       bg={useColorModeValue('brand.300', 'gray.900')}
-      rounded={'lg'}
       boxShadow={'md'}
       overflow="hidden"
       p={5}>
@@ -68,23 +67,12 @@ const Card = ({ heading, description, icon, href }: CardProps) => {
 
 export default function Values() {
   return (
-    <Box mb={10}>
+    <Box py={7} bgColor={useColorModeValue('brand.100', 'gray.500')}>
       <Stack spacing={4} as={Container} maxW={'5xl'}>
-        <Heading fontWeight={800}>Najważniejsze <Text as={'span'} position={'relative'}
-            _after={{
-              content: "''",
-              width: 'full',
-              height: useBreakpointValue({ base: '20%', md: '30%' }),
-              position: 'absolute',
-              bottom: 1,
-              left: 0,
-              bg: 'brand.200',
-              zIndex: -1,
-            }}>
+        <Heading fontWeight={700} color={useColorModeValue('white', 'white')}>Najważniejsze
             postulaty
-          </Text>
         </Heading>
-        <Text color={useColorModeValue("gray.500", "gray.300")} fontSize={'lg'}>
+        <Text color={useColorModeValue("white", "gray.300")} fontSize={'lg'}>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis
           obcaecati ut cupiditate pariatur, dignissimos, placeat amet officiis.
         </Text>
