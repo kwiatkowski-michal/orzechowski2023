@@ -1,5 +1,6 @@
 import { ExternalLinkIcon } from "@chakra-ui/icons";
-import { Container, Stack, Heading, Button, Text, Box, Link, Wrap, WrapItem, useColorModeValue, Show, IconButton, useColorMode, Card, CardBody, CardHeader } from "@chakra-ui/react";
+import { Container, Stack, Heading, Button, Text, Box, Link, Wrap, WrapItem, useColorModeValue, Show, IconButton, useColorMode, Card, CardBody, CardHeader, Image } from "@chakra-ui/react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import IonIcon from "@reacticons/ionicons";
 
 import { FaFacebookSquare, FaInstagramSquare, FaMoon, FaSun, FaTwitter, FaTwitterSquare } from "react-icons/fa";
@@ -44,7 +45,7 @@ export default function Hero() {
                                                     <Link target="_blank" href="https://facebook.com/orzechowski.mat"><Button variant={'solid'} size={'lg'} colorScheme={'facebook'} leftIcon={<FaFacebookSquare />}>Facebook</Button></Link>
                                                 </WrapItem>
                                                 <WrapItem>
-                                                    <Link target="_blank" href="https://x.com/orzechowski_mat"><Button variant={'solid'} size={'lg'} color={useColorModeValue('white', 'black')} bgColor={useColorModeValue('black', 'gray.200')} _hover={{ bg: useColorModeValue('gray.700', 'gray.400') }} leftIcon={<FaTwitter />}>X</Button></Link>
+                                                    <Link target="_blank" href="https://x.com/orzechowski_mat"><Button variant={'solid'} size={'lg'} color={useColorModeValue('white', 'black')} bgColor={useColorModeValue('black', 'gray.200')} _hover={{ bg: useColorModeValue('gray.700', 'gray.400') }}>Platforma X</Button></Link>
                                                 </WrapItem>
                                                 <WrapItem>
                                                     <Link target="_blank" href="https://instagram.com/mateusz.orzechowski"><Button variant={'solid'} size={'lg'} colorScheme={'pink'} leftIcon={<FaInstagramSquare />}>Instagram</Button></Link>
