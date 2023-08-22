@@ -13,6 +13,7 @@ import {
   Image,
 } from '@chakra-ui/react'
 import { HamburgerIcon, CloseIcon, MoonIcon, SunIcon } from '@chakra-ui/icons'
+import React from 'react'
 
 interface Props {
   children: React.ReactNode
@@ -41,9 +42,10 @@ const NavLink = (props: Props) => {
   const { children } = props
   return (
     <Box
-      as="a"
-      px={2}
-      py={1}
+      as="span"
+      py="2"
+      px={3}
+
       color={"white"}
       rounded={'0'}
       _hover={{
@@ -60,27 +62,33 @@ export default function WithAction() {
     const { colorMode, toggleColorMode }  = useColorMode()
   const { isOpen, onOpen, onClose } = useDisclosure()
 
+
   return (
     <>
-      <Box bg={useColorModeValue('brand.100', 'black')} px={4}>
-        <Flex py={2} alignItems={'center'} justifyContent={'space-between'}>
+      <Box as="header" position="absolute" w="100%">
+        <Flex
+              px={{md: '4'}}
+              pt={{md: '2'}}
+              alignItems={'center'} justifyContent={'space-between'}>
           <IconButton
           color={"white"}
+          
           rounded={0}
           _hover={{
             textDecoration: 'none',
             color: "white",
-            bg: "brand.200",
+            bg: "brand.100",
           }}
-          bgColor={useColorModeValue('brand.100', 'black')}
+          bgColor={"inherit"}
             size={'md'}
+            _checked={{bg: "brand.100"}}
             icon={isOpen ? <CloseIcon /> : <HamburgerIcon />}
             aria-label={'Open Menu'}
             display={{ md: 'none' }}
             onClick={isOpen ? onClose : onOpen}
           />
           <HStack spacing={8} alignItems={'center'}>
-            <Box><Image src="./logo-mo.svg" color={"white"} height={"8"}></Image></Box>
+            <Box><Image src="./logo-mo.svg" color={"white"} mt={2} height={"8"}></Image></Box>
             <HStack as={'nav'} spacing={4} display={{ base: 'none', md: 'flex' }}>
               {Links.map((link) => (
                 <NavLink key={link.id}><a href={link.link}>{link.title}</a></NavLink>
@@ -93,10 +101,11 @@ export default function WithAction() {
           _hover={{
             textDecoration: 'none',
             color: "white",
-            bg: "brand.200",
+            bg: "brand.100",
           }}
+          _checked={{bg: "brand.100"}}
           rounded={0}
-          bgColor={useColorModeValue('brand.100', 'black')}
+          bgColor={"inherit"}
  >
                 {colorMode === 'light' ? <MoonIcon /> : <SunIcon />}
               </Button>
@@ -106,8 +115,8 @@ export default function WithAction() {
         </Flex>
 
         {isOpen ? (
-          <Box pb={4} display={{ md: 'none' }}>
-            <Stack as={'nav'} spacing={4}>
+          <Box mt={2} bgColor={'brand.100'} display={{ md: 'none' }}>
+            <Stack as={'nav'}>
               {Links.map((link) => (
                 <NavLink key={link.id}><a href={link.link}>{link.title}</a></NavLink>
               ))}

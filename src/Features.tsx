@@ -77,7 +77,7 @@ export default function FeaturesMain() {
             />
           </Stack>
         </Stack>
-        <Flex boxShadow={"xl"}>
+        <Flex boxShadow={"dark-lg"}>
           <Image
 
             alt={'Mateusz Orzechowski'}

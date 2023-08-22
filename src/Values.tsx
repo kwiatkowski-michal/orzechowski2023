@@ -34,7 +34,7 @@ const Card = ({ heading, description, icon, href }: CardProps) => {
       maxW={{ base: 'full', md: '314px' }}
       w={'full'}
       bg={useColorModeValue('brand.100', 'gray.900')}
-      boxShadow={'md'}
+      boxShadow={'dark-lg'}
       overflow="hidden"
       p={5}>
       <Stack align={'start'} spacing={2}>

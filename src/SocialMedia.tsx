@@ -33,7 +33,6 @@ export default function SocialMedia() {
         variant: "solid",
         duration: 5000,
         position: 'bottom-right',
-        isClosable: true,
       })
     }
     }, [])
@@ -46,7 +45,7 @@ export default function SocialMedia() {
                             Najnowsze posty
                         </Heading>
                         <Box>
-                            <Box p={1} bgColor={"white"} shadow={"lg"}>
+                            <Box p={1} bgColor={"white"} shadow={"dark-lg"}>
                             <TwitterTimelineEmbed lang="pl" noHeader noScrollbar noBorders noFooter sourceType="profile" options={{ height: "550" }} screenName="orzechowski_mat"
                                 placeholder={<Box rounded={10}>
                                     <Box padding='6'>

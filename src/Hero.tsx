@@ -10,10 +10,10 @@ export default function Hero() {
         <>
             <Show above="md">
                 
-                <Box bgColor={useColorModeValue("brand.100", "gray.800")}>
-                    <Container maxW={'4xl'}>
+                <Box bgColor={useColorModeValue("brand.100", "gray.900")}>
+                    <Container maxW={'4xl'} pt={8}>
                         <Stack w={"100%"} as={Box} textAlign={'left'} spacing={{ base: 8, md: 14 }} py={{ base: 20, md: 31 }}>
-                            <Card rounded={0} p={20} boxShadow={"2xl"} bgImage={"./image3.jpg"} bgPosition="top"
+                            <Card rounded={0} p={20} boxShadow={"dark-lg"} bgImage={"./image3.jpg"} bgPosition="top"
   bgRepeat="no-repeat" bgSize={"cover"}>
                                 <CardHeader>
                                     <Heading fontSize={{ base: '5xl', md: '6xl' }} color={"white"} mb={15} lineHeight={'110%'} sx={{
@@ -34,7 +34,7 @@ export default function Hero() {
                                         </Stack>
                                         <Wrap spacing={2} justify={'left'}>
                                         <Link target="_blank" href={'https://m.me/112361920273367'}><IconButton aria-label="messenger" rounded={0} color={"brand.100"} bgColor={"brand.300"} _hover={{ bg: "brand.200" }} icon={<FaFacebookMessenger></FaFacebookMessenger>}></IconButton></Link>
-                                        <Link target="_blank" href={'https://tiktok.com/orzechowski_mat'}><IconButton aria-label="tiktok" rounded={0} color={"brand.100"} bgColor={"brand.300"} _hover={{ bg: "brand.200" }} icon={<FaTiktok></FaTiktok>}></IconButton></Link>
+                                        <Link target="_blank" href={'https://www.tiktok.com/@orzechowski_mat'}><IconButton aria-label="tiktok" rounded={0} color={"brand.100"} bgColor={"brand.300"} _hover={{ bg: "brand.200" }} icon={<FaTiktok></FaTiktok>}></IconButton></Link>
                                         <Link target="_blank" href={'https://facebook.com/orzechowski.mat'}><IconButton aria-label="facebook" rounded={0} color={"brand.100"} bgColor={"brand.300"} _hover={{ bg: "brand.200" }} icon={<FaFacebookSquare></FaFacebookSquare>}></IconButton></Link>
                                         <Link target="_blank" href={'https://x.com/orzechowski_mat'}><IconButton aria-label="x" rounded={0} color={"brand.100"} bgColor={"brand.300"} _hover={{ bg: "brand.200" }} icon={<Icon viewBox="0 0 500 500" color={"brand.100"}><path fill="currentColor" d="M389 48h71L306 224l181 240H345L234 319 107 464H36l165-188L27 48h145l101 133L389 48zm-25 374h39L152 88h-42l255 334z"/></Icon>}></IconButton></Link>
                                         </Wrap>
@@ -73,7 +73,7 @@ export default function Hero() {
                                 <Wrap spacing={2} justify={'left'}>
                                         <Link target="_blank" href={'https://m.me/112361920273367'}><IconButton aria-label="messenger" rounded={0} color={"brand.100"} bgColor={"brand.300"} _hover={{ bg: "brand.200" }} icon={<FaFacebookMessenger></FaFacebookMessenger>}></IconButton></Link>
                                         <Link target="_blank" href={'https://tiktok.com/orzechowski_mat'}><IconButton aria-label="tiktok" rounded={0} color={"brand.100"} bgColor={"brand.300"} _hover={{ bg: "brand.200" }} icon={<FaTiktok></FaTiktok>}></IconButton></Link>
-                                        <Link target="_blank" href={'https://facebook.com/orzechowski.mat'}><IconButton aria-label="facebook" rounded={0} color={"brand.100"} bgColor={"brand.300"} _hover={{ bg: "brand.200" }} icon={<FaFacebookSquare></FaFacebookSquare>}></IconButton></Link>
+                                        <Link target="_blank" href={'https://www.tiktok.com/@orzechowski_mat'}><IconButton aria-label="facebook" rounded={0} color={"brand.100"} bgColor={"brand.300"} _hover={{ bg: "brand.200" }} icon={<FaFacebookSquare></FaFacebookSquare>}></IconButton></Link>
                                         <Link target="_blank" href={'https://x.com/orzechowski_mat'}><IconButton aria-label="x" rounded={0} color={"brand.100"} bgColor={"brand.300"} _hover={{ bg: "brand.200" }} icon={<Icon viewBox="0 0 500 500" color={"brand.100"}><path fill="currentColor" d="M389 48h71L306 224l181 240H345L234 319 107 464H36l165-188L27 48h145l101 133L389 48zm-25 374h39L152 88h-42l255 334z"/></Icon>}></IconButton></Link>
                                         </Wrap>
                             </Stack>
