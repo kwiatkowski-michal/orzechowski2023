@@ -2,6 +2,7 @@ import { ExternalLinkIcon, Icon } from "@chakra-ui/icons";
 import { Container, Stack, Heading, Button, Text, Box, Link, Wrap, WrapItem, useColorModeValue, Show, IconButton, useColorMode, Card, CardBody, CardHeader, Image, background } from "@chakra-ui/react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import IonIcon from "@reacticons/ionicons";
+import { relative } from "path";
 
 import { FaFacebook, FaFacebookMessenger, FaFacebookSquare, FaInstagramSquare, FaMoon, FaSun, FaTiktok, FaTwitter, FaTwitterSquare } from "react-icons/fa";
 export default function Hero() {
@@ -16,8 +17,8 @@ export default function Hero() {
                             <Card rounded={0} p={20} boxShadow={"dark-lg"} bgImage={"./image3.jpg"} bgPosition="top"
   bgRepeat="no-repeat" bgSize={"cover"}>
                                 <CardHeader>
-                                    <Heading fontSize={{ base: '5xl', md: '6xl' }} color={"white"} mb={15} lineHeight={'110%'} sx={{
-                                        transform: "rotate(-7deg) skewX(-7deg)"}}><Text fontWeight={400}>POLSKA</Text>DLA POKOLEŃ</Heading>
+                                    <Heading fontWeight={400}  fontSize={{ base: '5xl', md: '6xl' }} color={"white"} mb={15} lineHeight={'110%'} sx={{
+                                        transform: "rotate(-7deg) skewX(-7deg)"}}>POLSKA<br></br><Text as={"span"} sx={{background: "brand.200", lineHeight: "1.4", paddingInline: "3"}} fontWeight={800}>DLA POKOLEŃ</Text></Heading>
                                 </CardHeader>
                                 <CardBody>
                                     <Stack direction={'column'} spacing={3} align={'left'} alignSelf={'center'} position={'relative'}>
@@ -54,8 +55,8 @@ export default function Hero() {
                     <Container maxW={'4xl'}>
                         
                         <Stack w={"100%"} as={Box} textAlign={'center'} spacing={{ base: 8, md: 14 }} pt={{ base: 20, md: 36 }} mt={"50%"}>
-                        <Heading color={"white"} fontSize={{ base: '5xl', md: '6xl' }} mb={15} lineHeight={'110%'} sx={{
-                                        transform: "rotate(-7deg) skewX(-7deg)"}}><Text fontWeight={400}>POLSKA</Text>DLA POKOLEŃ</Heading>
+                        <Heading color={"white"} fontSize={{ base: '5xl', md: '6xl' }} fontWeight={400} mb={15}  sx={{
+                                        transform: "rotate(-7deg) skewX(-7deg)"}}>POLSKA<br></br><Text as={"span"} sx={{background: "brand.200", lineHeight: "1", paddingInline: "3"}} fontWeight={800}>DLA POKOLEŃ</Text></Heading>
                             
                             
                             <Stack direction={'column'} spacing={3} align={'center'} alignSelf={'center'} position={'relative'}>
