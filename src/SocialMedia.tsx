@@ -1,4 +1,4 @@
-import { Box, Button, Center, Container, Heading, Link, SimpleGrid, SkeletonCircle, SkeletonText, Text, useColorMode, useColorModeValue, useToast } from "@chakra-ui/react";
+import { Box, Button, Center, Container, Heading, Icon, IconButton, Link, SimpleGrid, SkeletonCircle, SkeletonText, Text, useColorMode, useColorModeValue, useToast } from "@chakra-ui/react";
 import { TwitterTimelineEmbed } from "react-twitter-embed";
 import {useBreakpointValue} from '@chakra-ui/react';
 import { useEffect } from "react";
@@ -8,11 +8,12 @@ export function TwitterButton() {
       <Center p={5}>
         <Link w={'full'} maxW={'md'} href="https://twitter.com/orzechowski_mat"><Button
           w={'full'}
-          colorScheme={'twitter'}
-        //   leftIcon={""}
+          rounded={0}
+          bgColor={"brand.100"}
+          color={"white"}
         >
           <Center>
-            <Text>Zaobserwuj mnie na X</Text>
+            <Text>Zaobserwuj mnie na <Icon viewBox="0 0 510 510"><path fill="currentColor" d="M389 48h71L306 224l181 240H345L234 319 107 464H36l165-188L27 48h145l101 133L389 48zm-25 374h39L152 88h-42l255 334z"/></Icon></Text>
           </Center>
         </Button></Link>
       </Center>
@@ -37,12 +38,12 @@ export default function SocialMedia() {
     }
     }, [])
     return (
-      <Box bgColor={useColorModeValue('brand.300', 'black')}>
+      <Box bgColor={useColorModeValue('white', 'black')}>
             <Container maxW={'5xl'} pb={10}>
-                <SimpleGrid bgColor={useColorModeValue('brand.300', 'black')} columns={{ base: 1, md: 2 }} spacing={10}>
+                <SimpleGrid  columns={{ base: 1, md: 2 }} spacing={10}>
                     <Box py={5}>
-                        <Heading fontWeight={700} pb={5}>
-                            Najnowsze <Text as={'span'} position={'relative'}  _before={{ content: "''", width: "full", height: useBreakpointValue({ base: "20%", md: "30%" }), position: "absolute", bottom: 1, left: 0, bg: "brand.200", zIndex: -1 }}>posty</Text>
+                        <Heading id="wpisy" color={useColorModeValue('brand.100', 'white')} fontWeight={800} pb={5}>
+                            Najnowsze posty
                         </Heading>
                         <Box>
                             <Box p={1} bgColor={"white"} shadow={"lg"}>
@@ -63,7 +64,7 @@ export default function SocialMedia() {
                         </Box>
                     </Box>
                     <Box>
-                        <Heading fontWeight={700} py={4}>Lorem ipsum dolor.</Heading>
+                        <Heading fontWeight={800} color={useColorModeValue('brand.100', 'white')} py={4}>Lorem ipsum dolor.</Heading>
                         <Box color={useColorModeValue("gray.500", "gray.300")} fontSize={'lg'}>
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, explicabo dignissimos quod placeat quae eius velit doloremque cum ullam blanditiis tempore totam fuga odio! Delectus praesentium temporibus in eos voluptate dicta fugiat? Sit quidem aperiam dolorum neque cum inventore non ipsam, possimus officia ullam sint itaque distinctio! Porro pariatur rerum iste veniam dolorum officia consequatur. Magnam at facilis saepe modi, reprehenderit exercitationem suscipit veniam dolore ullam nostrum rerum tempore beatae, laborum possimus illo explicabo nulla quidem! Debitis laborum modi amet recusandae soluta sapiente distinctio tempora, tenetur omnis deserunt? Porro quia ipsum fuga sint quasi possimus, aliquid ab quaerat modi sed facere, temporibus ipsa laborum debitis nam eius quis voluptates in autem sunt nesciunt accusamus. Nemo esse asperiores voluptatum rerum nostrum adipisci porro, minima, inventore iste blanditiis neque quos ullam itaque suscipit eligendi qui voluptatibus ab maxime laborum? Fugit earum debitis consequuntur maiores rem illo minima voluptates rerum vitae incidunt officia culpa.
                         </Box>

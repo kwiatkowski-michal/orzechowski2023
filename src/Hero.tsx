@@ -1,27 +1,19 @@
-import { ExternalLinkIcon } from "@chakra-ui/icons";
+import { ExternalLinkIcon, Icon } from "@chakra-ui/icons";
 import { Container, Stack, Heading, Button, Text, Box, Link, Wrap, WrapItem, useColorModeValue, Show, IconButton, useColorMode, Card, CardBody, CardHeader, Image, background } from "@chakra-ui/react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import IonIcon from "@reacticons/ionicons";
 
-import { FaFacebookSquare, FaInstagramSquare, FaMoon, FaSun, FaTwitter, FaTwitterSquare } from "react-icons/fa";
+import { FaFacebook, FaFacebookMessenger, FaFacebookSquare, FaInstagramSquare, FaMoon, FaSun, FaTiktok, FaTwitter, FaTwitterSquare } from "react-icons/fa";
 export default function Hero() {
     const { toggleColorMode, colorMode } = useColorMode();
     return (
         <>
             <Show above="md">
-                <IconButton
-                    aria-label="włącz tryb ciemny"
-
-                    size="xs"
-                    position="absolute"
-                    top={4}
-                    left={4}
-                    onClick={toggleColorMode} icon={colorMode === "dark" ? <FaSun /> : <FaMoon />}
-                />
+                
                 <Box bgColor={useColorModeValue("brand.100", "gray.800")}>
                     <Container maxW={'4xl'}>
-                        <Stack w={"100%"} as={Box} textAlign={'left'} spacing={{ base: 8, md: 14 }} py={{ base: 20, md: 36 }}>
-                            <Card rounded={0} p={20} boxShadow={"2xl"} bgImage={"./image1.jpeg"} bgPosition="top"
+                        <Stack w={"100%"} as={Box} textAlign={'left'} spacing={{ base: 8, md: 14 }} py={{ base: 20, md: 31 }}>
+                            <Card rounded={0} p={20} boxShadow={"2xl"} bgImage={"./image3.jpg"} bgPosition="top"
   bgRepeat="no-repeat" bgSize={"cover"}>
                                 <CardHeader>
                                     <Heading fontSize={{ base: '5xl', md: '6xl' }} color={"white"} mb={15} lineHeight={'110%'} sx={{
@@ -33,14 +25,20 @@ export default function Hero() {
                                             alignSelf={'left'}>
                                             <Wrap spacing={4} justify={'left'}>
                                                 <WrapItem>
-                                                    <Link target="_blank" href="https://ekipalewicy.pl"><Button variant={'solid'} size={'lg'} rounded={0} color={useColorModeValue('white', 'black')} bgColor={useColorModeValue('brand.100', 'gray.200')} _hover={{ bg: useColorModeValue('brand.200', 'gray.400') }}>Dołącz do Ekipy Lewicy</Button></Link>
+                                                    <Link target="_blank" href="https://ekipalewicy.pl"><Button variant={'solid'} size={'lg'} rounded={0} color={"white"} bgColor={"brand.100"} _hover={{ bg: "brand.200" }}>Dołącz do Ekipy Lewicy</Button></Link>
                                                 </WrapItem>
                                                 <WrapItem>
-                                                    <Link target="_blank" href="https://x.com/orzechowski_mat"><Button variant={'solid'} size={'lg'} rounded={0} color={useColorModeValue('white', 'black')} bgColor={useColorModeValue('brand.100', 'gray.200')} _hover={{ bg: useColorModeValue('brand.200', 'gray.400') }}>Platforma X</Button></Link>
+                                                    <Link target="_blank" href="https://ekipalewicy.pl"><Button variant={'solid'} size={'lg'} rounded={0} color={"white"} bgColor={"brand.100"} _hover={{ bg: "brand.200" }}>Wesprzyj moją kampanię</Button></Link>
                                                 </WrapItem>
                                             </Wrap>
                                         </Stack>
-                                        <Link target="_blank" href={'https://m.me/112361920273367'}><Button variant={'solid'} rounded={0} colorScheme={"messenger"} rightIcon={<ExternalLinkIcon />} size={'sm'}>Napisz na Messengerze!</Button></Link>
+                                        <Wrap spacing={2} justify={'left'}>
+                                        <Link target="_blank" href={'https://m.me/112361920273367'}><IconButton aria-label="messenger" rounded={0} color={"brand.100"} bgColor={"brand.300"} _hover={{ bg: "brand.200" }} icon={<FaFacebookMessenger></FaFacebookMessenger>}></IconButton></Link>
+                                        <Link target="_blank" href={'https://tiktok.com/orzechowski_mat'}><IconButton aria-label="tiktok" rounded={0} color={"brand.100"} bgColor={"brand.300"} _hover={{ bg: "brand.200" }} icon={<FaTiktok></FaTiktok>}></IconButton></Link>
+                                        <Link target="_blank" href={'https://facebook.com/orzechowski.mat'}><IconButton aria-label="facebook" rounded={0} color={"brand.100"} bgColor={"brand.300"} _hover={{ bg: "brand.200" }} icon={<FaFacebookSquare></FaFacebookSquare>}></IconButton></Link>
+                                        <Link target="_blank" href={'https://x.com/orzechowski_mat'}><IconButton aria-label="x" rounded={0} color={"brand.100"} bgColor={"brand.300"} _hover={{ bg: "brand.200" }} icon={<Icon viewBox="0 0 500 500" color={"brand.100"}><path fill="currentColor" d="M389 48h71L306 224l181 240H345L234 319 107 464H36l165-188L27 48h145l101 133L389 48zm-25 374h39L152 88h-42l255 334z"/></Icon>}></IconButton></Link>
+                                        </Wrap>
+                                        
                                     </Stack>
                                 </CardBody>
                             </Card>
@@ -49,15 +47,7 @@ export default function Hero() {
                 </Box>
             </Show>
             <Show below="md">
-                <IconButton
-                    aria-label="toggle theme"
-                    rounded="full"
-                    size="xs"
-                    position="absolute"
-                    top={4}
-                    left={4}
-                    onClick={toggleColorMode} icon={colorMode === "dark" ? <FaSun /> : <FaMoon />}
-                />
+                
                 <Box bgImage={"./image2.jpg"} bgPosition="top"
   bgRepeat="no-repeat" bgSize={"cover"} py={"100"}>
                 
@@ -72,17 +62,20 @@ export default function Hero() {
                                 <Stack direction='column' align={'bottom'}
                                     alignSelf={'center'}>
                                     <Wrap spacing={4} justify={'center'}>
-                                                <WrapItem>
-                                                    <Link target="_blank" href="https://ekipalewicy.pl"><Button variant={'solid'} size={'lg'} rounded={0} color={useColorModeValue('white', 'black')} bgColor={useColorModeValue('brand.100', 'gray.200')} _hover={{ bg: useColorModeValue('brand.200', 'gray.400') }}>Dołącz do Ekipy Lewicy</Button></Link>
+                                    <WrapItem>
+                                                    <Link target="_blank" href="https://ekipalewicy.pl"><Button variant={'solid'} size={'lg'} rounded={0} color={"white"} bgColor={"brand.100"} _hover={{ bg: "brand.200" }}>Dołącz do Ekipy Lewicy</Button></Link>
                                                 </WrapItem>
                                                 <WrapItem>
-                                                    <Link target="_blank" href="https://x.com/orzechowski_mat"><Button variant={'solid'} size={'lg'} rounded={0} color={useColorModeValue('white', 'black')} bgColor={useColorModeValue('brand.100', 'gray.200')} _hover={{ bg: useColorModeValue('brand.200', 'gray.400') }}>Platforma X</Button></Link>
+                                                <Link target="_blank" href="https://ekipalewicy.pl"><Button variant={'solid'} size={'lg'} rounded={0} color={"white"} bgColor={"brand.100"} _hover={{ bg: "brand.200" }}>Wesprzyj moją kampanię</Button></Link>
                                                 </WrapItem>
                                             </Wrap>
                                 </Stack>
-                                <Button variant={'solid'} colorScheme={"messenger"} rounded={0} rightIcon={<ExternalLinkIcon />} size={'sm'}>
-                                    <Link target="_blank" href={'https://m.me/112361920273367'}>Napisz na Messengerze!</Link>
-                                </Button>
+                                <Wrap spacing={2} justify={'left'}>
+                                        <Link target="_blank" href={'https://m.me/112361920273367'}><IconButton aria-label="messenger" rounded={0} color={"brand.100"} bgColor={"brand.300"} _hover={{ bg: "brand.200" }} icon={<FaFacebookMessenger></FaFacebookMessenger>}></IconButton></Link>
+                                        <Link target="_blank" href={'https://tiktok.com/orzechowski_mat'}><IconButton aria-label="tiktok" rounded={0} color={"brand.100"} bgColor={"brand.300"} _hover={{ bg: "brand.200" }} icon={<FaTiktok></FaTiktok>}></IconButton></Link>
+                                        <Link target="_blank" href={'https://facebook.com/orzechowski.mat'}><IconButton aria-label="facebook" rounded={0} color={"brand.100"} bgColor={"brand.300"} _hover={{ bg: "brand.200" }} icon={<FaFacebookSquare></FaFacebookSquare>}></IconButton></Link>
+                                        <Link target="_blank" href={'https://x.com/orzechowski_mat'}><IconButton aria-label="x" rounded={0} color={"brand.100"} bgColor={"brand.300"} _hover={{ bg: "brand.200" }} icon={<Icon viewBox="0 0 500 500" color={"brand.100"}><path fill="currentColor" d="M389 48h71L306 224l181 240H345L234 319 107 464H36l165-188L27 48h145l101 133L389 48zm-25 374h39L152 88h-42l255 334z"/></Icon>}></IconButton></Link>
+                                        </Wrap>
                             </Stack>
                         </Stack>
                     </Container>

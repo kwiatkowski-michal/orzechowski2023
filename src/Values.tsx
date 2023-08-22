@@ -33,7 +33,7 @@ const Card = ({ heading, description, icon, href }: CardProps) => {
     <Box
       maxW={{ base: 'full', md: '314px' }}
       w={'full'}
-      bg={useColorModeValue('brand.300', 'gray.900')}
+      bg={useColorModeValue('brand.100', 'gray.900')}
       boxShadow={'md'}
       overflow="hidden"
       p={5}>
@@ -49,12 +49,12 @@ const Card = ({ heading, description, icon, href }: CardProps) => {
           {icon}
         </Flex>
         <Box mt={2}>
-          <Heading size="md">{heading}</Heading>
-          <Text mt={1} fontSize={'sm'}>
+          <Heading size="md" color={"white"}>{heading}</Heading>
+          <Text mt={1} color={"white"} fontSize={'sm'}>
             {description}
           </Text>
         </Box>
-        <Button variant={'link'} color={'brand.200'} rightIcon={<ExternalLinkIcon />} size={'sm'}>
+        <Button variant={'link'} color={"white"} rightIcon={<ExternalLinkIcon />} size={'sm'}>
           <Link>Zobacz więcej
           </Link>
         </Button>
@@ -67,12 +67,12 @@ const Card = ({ heading, description, icon, href }: CardProps) => {
 
 export default function Values() {
   return (
-    <Box py={7} bgColor={useColorModeValue('brand.100', 'gray.500')}>
+    <Box py={7} bgColor={useColorModeValue('white', 'black')}>
       <Stack spacing={4} as={Container} maxW={'5xl'}>
-        <Heading fontWeight={700} color={useColorModeValue('white', 'white')}>Najważniejsze
+        <Heading fontWeight={700} id='postulaty' color={useColorModeValue('brand.100', 'white')}>Najważniejsze
             postulaty
         </Heading>
-        <Text color={useColorModeValue("white", "gray.300")} fontSize={'lg'}>
+        <Text color={useColorModeValue("black", "gray.300")} fontSize={'lg'}>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis
           obcaecati ut cupiditate pariatur, dignissimos, placeat amet officiis.
         </Text>

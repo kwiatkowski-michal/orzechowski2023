@@ -4,9 +4,11 @@ import Footer from "./Footer"
 import SocialMedia from "./SocialMedia"
 import Values from "./Values"
 import { Box } from "@chakra-ui/react"
+import WithAction from "./Navbar"
 
 export const App = () => (
   <Box>
+    <WithAction/>
     <Hero />
     <FeaturesMain/>
     <Values/>

@@ -32,20 +32,20 @@ const Feature = ({ text, icon, iconBg }: FeatureProps) => {
         bg={iconBg}>
         {icon}
       </Flex>
-      <Text fontWeight={600}>{text}</Text>
+      <Text fontWeight={"extrabold"}>{text}</Text>
     </Stack>
   );
 };
 
 export default function FeaturesMain() {
   return (
-    <Box bgColor={useColorModeValue("brand.300", "black")}>
+    <Box bgColor={useColorModeValue("white", "black")}>
     <Container maxW={'5xl'} py={12}>
       <SimpleGrid columns={{ base: 1, md: 2 }} spacing={10}>
         <Stack spacing={4}>
-          <Heading fontWeight={700} color={useColorModeValue("brand.200", "gray.000")}>Moje 
+          <Heading fontWeight={"bold"} id='wartosci' color={useColorModeValue("brand.100", "gray.000")}>Moje 
             wartości</Heading>
-          <Text color={useColorModeValue("brand.200", "gray.300")} fontSize={'lg'}>
+          <Text color={useColorModeValue("black", "gray.300")} fontSize={'lg'}>
             Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
             nonumy eirmod tempor invidunt ut labore
           </Text>
@@ -53,26 +53,26 @@ export default function FeaturesMain() {
             spacing={4}
             divider={
               <StackDivider
-                borderColor={useColorModeValue('brand.200', 'gray.700')}
+                borderColor={useColorModeValue('black', 'gray.700')}
               />
             }>
             <Feature
               icon={
                 <Icon as={FaHandshake} color={'yellow.500'} w={5} h={5} />
               }
-              iconBg={useColorModeValue('yellow.100', 'yellow.900')}
+              iconBg={useColorModeValue('brand.300', 'gray.700')}
               text={'Wolność'}
             />
             <Feature
               icon={<Icon as={FaEquals} color={'green.500'} w={5} h={5} />}
-              iconBg={useColorModeValue('green.100', 'green.900')}
+              iconBg={useColorModeValue('brand.300', 'gray.700')}
               text={'Równość'}
             />
             <Feature
               icon={
                 <Icon as={FaHandPeace} color={'purple.500'} w={5} h={5} />
               }
-              iconBg={useColorModeValue('purple.100', 'purple.900')}
+              iconBg={useColorModeValue('brand.300', 'gray.700')}
               text={'Demokracja'}
             />
           </Stack>
