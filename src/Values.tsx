@@ -34,6 +34,8 @@ const Card = ({ heading, description, icon, href }: CardProps) => {
       maxW={{ base: 'full', md: '314px' }}
       w={'full'}
       bg={useColorModeValue('brand.100', 'gray.900')}
+      _hover={{bgColor: "brand.200"}}
+      transition={"0.5s"}
       boxShadow={'dark-lg'}
       overflow="hidden"
       p={5}>

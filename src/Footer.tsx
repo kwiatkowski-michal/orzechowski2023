@@ -35,7 +35,7 @@ export default function Footer() {
         </Show>
         <Show below='md'>
           <Text>Wykonanie: Michał Kwiatkowski</Text>
-          <Button size='xs' rightIcon={<ExternalLinkIcon />} colorScheme='pink' variant='outline'><Link target='_blank' href={'https://www.lewica.org.pl'}>Materiał KW Nowa Lewica</Link></Button>
+          <Button size='xs' rightIcon={<ExternalLinkIcon />} color={"brand.100"} borderColor={"brand.100"} variant='outline'><Link target='_blank' href={'https://www.lewica.org.pl'}>Materiał KW Nowa Lewica</Link></Button>
         </Show>
       </Container>
     </Box>

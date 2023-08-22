@@ -43,15 +43,16 @@ const NavLink = (props: Props) => {
   return (
     <Box
       as="span"
-      py="2"
-      px={3}
-
+      py="4"
+      px={4}
+      transition={"0.2s"}
       color={"white"}
       rounded={'0'}
       _hover={{
         textDecoration: 'none',
         color: "white",
-        bg: "brand.200",
+        fontWeight: "800",
+        bg: useColorModeValue('brand.200', 'brand.100'),
       }}>
       {children}
     </Box>
@@ -65,10 +66,11 @@ export default function WithAction() {
 
   return (
     <>
-      <Box as="header" position="absolute" w="100%">
+      <Box as="header"  position="absolute" w="100%">
         <Flex
               px={{md: '4'}}
               pt={{md: '2'}}
+              pb={{s: "6", md: "0"}}
               alignItems={'center'} justifyContent={'space-between'}>
           <IconButton
           color={"white"}
@@ -82,6 +84,7 @@ export default function WithAction() {
           bgColor={"inherit"}
             size={'md'}
             _checked={{bg: "brand.100"}}
+            transition={"0.2s"}
             icon={isOpen ? <CloseIcon /> : <HamburgerIcon />}
             aria-label={'Open Menu'}
             display={{ md: 'none' }}
@@ -89,7 +92,7 @@ export default function WithAction() {
           />
           <HStack spacing={8} alignItems={'center'}>
             <Box><Image src="./logo-mo.svg" color={"white"} mt={2} height={"8"}></Image></Box>
-            <HStack as={'nav'} spacing={4} display={{ base: 'none', md: 'flex' }}>
+            <HStack as={'nav'}  spacing={4} display={{ base: 'none', md: 'flex' }}>
               {Links.map((link) => (
                 <NavLink key={link.id}><a href={link.link}>{link.title}</a></NavLink>
               ))}
@@ -98,10 +101,11 @@ export default function WithAction() {
           <Flex alignItems={'center'}>
           <Button onClick={toggleColorMode}
           color={"white"}
+          transition={"0.2s"}
           _hover={{
             textDecoration: 'none',
             color: "white",
-            bg: "brand.100",
+            bg: useColorModeValue('brand.200', 'brand.100'),
           }}
           _checked={{bg: "brand.100"}}
           rounded={0}
@@ -115,7 +119,7 @@ export default function WithAction() {
         </Flex>
 
         {isOpen ? (
-          <Box mt={2} bgColor={'brand.100'} display={{ md: 'none' }}>
+          <Box  bgColor={'brand.100'} display={{ md: 'none' }}>
             <Stack as={'nav'}>
               {Links.map((link) => (
                 <NavLink key={link.id}><a href={link.link}>{link.title}</a></NavLink>

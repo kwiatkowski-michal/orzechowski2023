@@ -9,6 +9,7 @@ export function TwitterButton() {
         <Link w={'full'} maxW={'md'} href="https://twitter.com/orzechowski_mat"><Button
           w={'full'}
           rounded={0}
+          _hover={{bgColor: "brand.200"}}
           bgColor={"brand.100"}
           color={"white"}
         >
