@@ -93,9 +93,9 @@ export default function WithAction() {
           <HStack spacing={8} alignItems={'center'}>
             <Box><Image src="./logo-mo.svg" color={"white"} mt={2} height={"8"}></Image></Box>
             <HStack as={'nav'}  spacing={4} display={{ base: 'none', md: 'flex' }}>
-              {Links.map((link) => (
+              {/* {Links.map((link) => (
                 <NavLink key={link.id}><a href={link.link}>{link.title}</a></NavLink>
-              ))}
+              ))} */}
             </HStack>
           </HStack>
           <Flex alignItems={'center'}>
@@ -121,9 +121,9 @@ export default function WithAction() {
         {isOpen ? (
           <Box  bgColor={'brand.100'} display={{ md: 'none' }}>
             <Stack as={'nav'}>
-              {Links.map((link) => (
+              {/* {Links.map((link) => (
                 <NavLink key={link.id}><a href={link.link}>{link.title}</a></NavLink>
-              ))}
+              ))} */}
             </Stack>
           </Box>
         ) : null}
