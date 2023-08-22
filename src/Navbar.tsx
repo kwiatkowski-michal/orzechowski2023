@@ -3,24 +3,16 @@
 import {
   Box,
   Flex,
-  Avatar,
   HStack,
-  Text,
   IconButton,
   Button,
-  Menu,
-  MenuButton,
-  MenuList,
-  MenuItem,
-  MenuDivider,
   useDisclosure,
   useColorModeValue,
   Stack,
   useColorMode,
-  color,
   Image,
 } from '@chakra-ui/react'
-import { HamburgerIcon, CloseIcon, AddIcon, MoonIcon, SunIcon } from '@chakra-ui/icons'
+import { HamburgerIcon, CloseIcon, MoonIcon, SunIcon } from '@chakra-ui/icons'
 
 interface Props {
   children: React.ReactNode
@@ -117,7 +109,7 @@ export default function WithAction() {
           <Box pb={4} display={{ md: 'none' }}>
             <Stack as={'nav'} spacing={4}>
               {Links.map((link) => (
-                <NavLink key={link.id}>{link.title}</NavLink>
+                <NavLink key={link.id}><a href={link.link}>{link.title}</a></NavLink>
               ))}
             </Stack>
           </Box>
