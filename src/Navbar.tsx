@@ -66,7 +66,7 @@ export default function WithAction() {
 
   return (
     <>
-      <Box as="header"  position="absolute" w="100%">
+      <Box userSelect={"none"} as="header"  position="absolute" w="100%">
         <Flex
               px={{md: '4'}}
               pt={{md: '2'}}
@@ -91,7 +91,7 @@ export default function WithAction() {
             onClick={isOpen ? onClose : onOpen}
           />
           <HStack spacing={8} alignItems={'center'}>
-            <Box><Image src="./logo-mo.svg" color={"white"} mt={2} height={"8"}></Image></Box>
+            <Box><Image userSelect={"none"} src="./logo-mo.svg" color={"white"} mt={2} height={"8"}></Image></Box>
             <HStack as={'nav'}  spacing={4} display={{ base: 'none', md: 'flex' }}>
               {/* {Links.map((link) => (
                 <NavLink key={link.id}><a href={link.link}>{link.title}</a></NavLink>

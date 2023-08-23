@@ -17,7 +17,7 @@ export default function Hero() {
                             <Card rounded={0} p={20} boxShadow={"dark-lg"} bgImage={"./image3.jpg"} bgPosition="top"
   bgRepeat="no-repeat" bgSize={"cover"}>
                                 <CardHeader>
-                                    <Heading fontWeight={400}  fontSize={{ base: '5xl', md: '6xl' }} color={"white"} mb={15} lineHeight={'110%'} sx={{
+                                    <Heading fontWeight={400} userSelect={"none"} fontSize={{ base: '5xl', md: '6xl' }} color={"white"} mb={15} lineHeight={'110%'} sx={{
                                         transform: "rotate(-7deg) skewX(-7deg)"}}>POLSKA<br></br><Text as={"span"} transition={"0.2s"} _hover={{background:"brand.100"}} sx={{background: "brand.200", lineHeight: "1.4", paddingInline: "3"}} fontWeight={800}>DLA POKOLEŃ</Text></Heading>
                                 </CardHeader>
                                 <CardBody>
@@ -49,13 +49,13 @@ export default function Hero() {
             </Show>
             <Show below="md">
                 
-                <Box bgImage={"./image2.jpg"} bgPosition="top"
+                <Box  bgImage={"./image2.jpg"} bgPosition="top"
   bgRepeat="no-repeat" bgSize={"cover"} py={"100"}>
                 
                     <Container maxW={'4xl'}>
                         
                         <Stack w={"100%"} as={Box} textAlign={'center'} spacing={{ base: 8, md: 14 }} pt={{ base: 20, md: 36 }} mt={"50%"}>
-                        <Heading color={"white"} fontSize={{ base: '5xl', md: '6xl' }} fontWeight={400} mb={15}  sx={{
+                        <Heading color={"white"} userSelect={"none"} fontSize={{ base: '5xl', md: '6xl' }} fontWeight={400} mb={15}  sx={{
                                         transform: "rotate(-7deg) skewX(-7deg)"}}>POLSKA<br></br><Text as={"span"} transition={"0.2s"} _hover={{background:"brand.100", transition: "0.2s"}} sx={{background: "brand.200", lineHeight: "1", paddingInline: "3"}} fontWeight={800}>DLA POKOLEŃ</Text></Heading>
                             
                             

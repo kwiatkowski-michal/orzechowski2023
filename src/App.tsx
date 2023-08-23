@@ -3,11 +3,11 @@ import FeaturesMain from "./Features"
 import Footer from "./Footer"
 import SocialMedia from "./SocialMedia"
 import Values from "./Values"
-import { Box } from "@chakra-ui/react"
+import { Box, Skeleton } from "@chakra-ui/react"
 import WithAction from "./Navbar"
 
 export const App = () => (
-  <Box>
+    <Box>
     <WithAction/>
     <Hero />
     {/* <FeaturesMain/>
