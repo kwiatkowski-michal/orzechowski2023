@@ -30,8 +30,6 @@ export default function SocialMedia() {
             id: id,
         title: 'Polityka prywatności',
         description: "Przeglądając stronę zgadzasz się na wykorzystanie plików cookies",
-        status: 'info',
-        variant: "solid",
         duration: 5000,
         position: 'bottom-right',
       })
@@ -63,12 +61,12 @@ export default function SocialMedia() {
                             </Box>
                         </Box>
                     </Box>
-                    <Box>
+                    {/* <Box>
                         <Heading fontWeight={800} color={useColorModeValue('brand.100', 'white')} py={4}>Lorem ipsum dolor.</Heading>
                         <Box color={useColorModeValue("gray.500", "gray.300")} fontSize={'lg'}>
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, explicabo dignissimos quod placeat quae eius velit doloremque cum ullam blanditiis tempore totam fuga odio! Delectus praesentium temporibus in eos voluptate dicta fugiat? Sit quidem aperiam dolorum neque cum inventore non ipsam, possimus officia ullam sint itaque distinctio! Porro pariatur rerum iste veniam dolorum officia consequatur. Magnam at facilis saepe modi, reprehenderit exercitationem suscipit veniam dolore ullam nostrum rerum tempore beatae, laborum possimus illo explicabo nulla quidem! Debitis laborum modi amet recusandae soluta sapiente distinctio tempora, tenetur omnis deserunt? Porro quia ipsum fuga sint quasi possimus, aliquid ab quaerat modi sed facere, temporibus ipsa laborum debitis nam eius quis voluptates in autem sunt nesciunt accusamus. Nemo esse asperiores voluptatum rerum nostrum adipisci porro, minima, inventore iste blanditiis neque quos ullam itaque suscipit eligendi qui voluptatibus ab maxime laborum? Fugit earum debitis consequuntur maiores rem illo minima voluptates rerum vitae incidunt officia culpa.
                         </Box>
-                    </Box>
+                    </Box> */}
                 </SimpleGrid>
             </Container>
             </Box>

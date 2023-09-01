@@ -5,6 +5,7 @@ import IonIcon from "@reacticons/ionicons";
 import { relative } from "path";
 
 import { FaFacebook, FaFacebookMessenger, FaFacebookSquare, FaInstagramSquare, FaMoon, FaSun, FaTiktok, FaTwitter, FaTwitterSquare } from "react-icons/fa";
+import ModalSupport from "./Modal-wsparcie";
 export default function Hero() {
     const { toggleColorMode, colorMode } = useColorMode();
     return (
@@ -29,7 +30,7 @@ export default function Hero() {
                                                     <Link target="_blank" href="https://ekipalewicy.pl"><Button variant={'solid'} size={'lg'} rounded={0} color={"white"} bgColor={"brand.100"} _hover={{ bg: "brand.200" }}>Dołącz do Ekipy Lewicy</Button></Link>
                                                 </WrapItem>
                                                 <WrapItem>
-                                                    <Link target="_blank" href="https://ekipalewicy.pl"><Button variant={'solid'} size={'lg'} rounded={0} color={"white"} bgColor={"brand.100"} _hover={{ bg: "brand.200" }}>Wesprzyj moją kampanię</Button></Link>
+                                                    <ModalSupport></ModalSupport>
                                                 </WrapItem>
                                             </Wrap>
                                         </Stack>
@@ -67,7 +68,7 @@ export default function Hero() {
                                                     <Link target="_blank" href="https://ekipalewicy.pl"><Button variant={'solid'} size={'lg'} rounded={0} color={"white"} bgColor={"brand.100"} _hover={{ bg: "brand.200" }}>Dołącz do Ekipy Lewicy</Button></Link>
                                                 </WrapItem>
                                                 <WrapItem>
-                                                <Link target="_blank" href="https://ekipalewicy.pl"><Button variant={'solid'} size={'lg'} rounded={0} color={"white"} bgColor={"brand.100"} _hover={{ bg: "brand.200" }}>Wesprzyj moją kampanię</Button></Link>
+                                                <ModalSupport></ModalSupport>
                                                 </WrapItem>
                                             </Wrap>
                                 </Stack>

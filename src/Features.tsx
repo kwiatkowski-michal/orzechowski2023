@@ -20,22 +20,22 @@ interface FeatureProps {
   icon?: ReactElement;
 }
 
-const Feature = ({ text, icon, iconBg }: FeatureProps) => {
-  return (
-    <Stack direction={'row'} align={'center'}>
-      <Flex
-        w={8}
-        h={8}
-        align={'center'}
-        justify={'center'}
-        rounded={'full'}
-        bg={iconBg}>
-        {icon}
-      </Flex>
-      <Text fontWeight={"extrabold"}>{text}</Text>
-    </Stack>
-  );
-};
+// const Feature = ({ text, icon, iconBg }: FeatureProps) => {
+//   return (
+//     <Stack direction={'row'} align={'center'}>
+//       <Flex
+//         w={8}
+//         h={8}
+//         align={'center'}
+//         justify={'center'}
+//         rounded={'full'}
+//         bg={iconBg}>
+//         {icon}
+//       </Flex>
+//       <Text fontWeight={"extrabold"}>{text}</Text>
+//     </Stack>
+//   );
+// };
 
 export default function FeaturesMain() {
   return (
@@ -43,13 +43,11 @@ export default function FeaturesMain() {
     <Container maxW={'5xl'} py={12}>
       <SimpleGrid columns={{ base: 1, md: 2 }} spacing={10}>
         <Stack spacing={4}>
-          <Heading fontWeight={"bold"} id='wartosci' color={useColorModeValue("brand.100", "gray.000")}>Moje 
-            wartości</Heading>
+          <Heading fontWeight={"bold"} id='wartosci' color={useColorModeValue("brand.100", "gray.000")}>Kim jestem?</Heading>
           <Text color={useColorModeValue("black", "gray.300")} fontSize={'lg'}>
-            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-            nonumy eirmod tempor invidunt ut labore
+          Kandyduję z ostatniego miejsca na liście komitetu wyborczego Nowej Lewicy, żeby walczyć o Polskę otwartą, zieloną, świecką i dla każdego - bez względu na grubość portfela. 
           </Text>
-          <Stack
+          {/* <Stack
             spacing={4}
             divider={
               <StackDivider
@@ -75,7 +73,7 @@ export default function FeaturesMain() {
               iconBg={useColorModeValue('brand.300', 'gray.700')}
               text={'Demokracja'}
             />
-          </Stack>
+          </Stack> */}
         </Stack>
         <Flex boxShadow={"dark-lg"}>
           <Image

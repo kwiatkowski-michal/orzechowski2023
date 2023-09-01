@@ -10,9 +10,9 @@ export const App = () => (
     <Box>
     <WithAction/>
     <Hero />
-    {/* <FeaturesMain/>
+    <FeaturesMain/>
     <Values/>
-    <SocialMedia/> */}
+    <SocialMedia/>
     <Footer/>
   </Box>
 )
