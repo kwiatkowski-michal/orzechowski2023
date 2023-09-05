@@ -12,7 +12,7 @@ import {
   useColorModeValue,
 } from '@chakra-ui/react';
 import { ReactElement } from 'react';
-import { FaBrain, FaBus, FaEquals, FaHammer, FaLeaf } from 'react-icons/fa';
+import { FaBrain, FaBus, FaEquals, FaHammer, FaLeaf, FaMoneyBill } from 'react-icons/fa';
 
 interface CardProps {
   heading: string;
@@ -77,7 +77,7 @@ export default function Values() {
             heading={'Psycholog w każdej szkole'}
             icon={<Icon as={FaBrain} w={10} h={10} />}
             description={
-              'Lorem ipsum dolor sit amet catetur, adipisicing elit.'
+              'Postuluję wprowadzenie standardu opieki psychologicznej w polskich szkołach. Działając jako aktywista, angażowałem się w działania na rzecz zdrowia psychicznego młodzieży, takie jak organizacja Okrągłych Stołów.'
             }
             href={'https://torun.wyborcza.pl/torun/7,48723,28525750,mateusz-orzechowski-z-mlodej-lewicy-czas-by-oddac-glos-mlodym.html'}
           />
@@ -85,15 +85,15 @@ export default function Values() {
             heading={'Utworzenie Bydgoskiego Parku Narodowego'}
             icon={<Icon as={FaLeaf} w={10} h={10} />}
             description={
-              'Wraz z Młodą Lewicą organizowałem panele dyskusyjne i okrągłe stoły o sytuacji lasów w Polsce.'
+              'Ostatni park narodowy powstał ponad 20 lat temu - czas to zmienić i utworzyć nowe parki narodowe, w tym Bydgoski Park Narodowy. Ponadto, wraz z Młodą Lewicą organizowałem panele dyskusyjne i okrągłe stoły o sytuacji lasów w Polsce.'
             }
             href={'https://grudziadz365.pl/pl/11_wiadomosci/84095_chcemy-lasu-nie-tartaku---panel-dyskusyjny-w-grudziadzu.html'}
           />
           <Card
-            heading={'Równość małżeńska'}
+            heading={'Prawa kobiet i osób LGBTQ+'}
             icon={<Icon as={FaEquals} w={10} h={10} />}
             description={
-              'Lorem ipsum dolor sit amet catetur, adipisicing elit.'
+              'Dążę do wprowadzenia w Polsce rozwiązań równościowych na wzór krajów Unii Europejskiej, które gwarantują prawa kobiet i osób LGBTQ+. Chcę, aby nasz kraj w końcu stał po cywilizowanej stronie Europy.'
             }
             href={'#'}
           />
@@ -101,7 +101,7 @@ export default function Values() {
             heading={'Autobus w każdej gminie, pociąg w każdym powiecie'}
             icon={<Icon as={FaBus} w={10} h={10} />}
             description={
-              'Lorem ipsum dolor sit amet catetur, adipisicing elit.'
+              'Moim celem jest zapewnienie dostępu do transportu publicznego na poziomie gminnym i powiatowym, z autobusami docierającymi do każdej gminy i pociągami dostępnymi w każdym powiecie. Jednocześnie, chcę wprowadzenia biletu na komunikację zbiorową w kraju za 59zł.'
             }
             href={'#'}
           />
@@ -109,7 +109,15 @@ export default function Values() {
             heading={'Powołanie Funduszu Kruszenia Betonu'}
             icon={<Icon as={FaHammer} w={10} h={10} />}
             description={
-              'Lorem ipsum dolor sit amet catetur, adipisicing elit.'
+              'Chcemy utworzenia Funduszu Kruszenia Betonu, który będzie wspierał inwestycje w rozwój infrastruktury i budowę, przyczyniając się to usuwania “betonozy” z miast'
+            }
+            href={'#'}
+          />
+          <Card
+            heading={'Zakaz bezpłatnych staży'}
+            icon={<Icon as={FaMoneyBill} w={10} h={10} />}
+            description={
+              'Moim celem jest wprowadzenie zakazu bezpłatnych staży, aby zapewnić uczestnikom staży, często studentom, godziwe wynagrodzenie za ich pracę.'
             }
             href={'#'}
           />
