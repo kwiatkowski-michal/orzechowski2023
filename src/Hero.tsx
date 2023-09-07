@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import IonIcon from "@reacticons/ionicons";
 import { relative } from "path";
 
-import { FaFacebook, FaFacebookMessenger, FaFacebookSquare, FaInstagramSquare, FaMoon, FaSun, FaTiktok, FaTwitter, FaTwitterSquare } from "react-icons/fa";
+import { FaFacebook, FaFacebookMessenger, FaFacebookSquare, FaInstagramSquare, FaMoon, FaPeopleCarry, FaSun, FaTiktok, FaTwitter, FaTwitterSquare } from "react-icons/fa";
 import ModalSupport from "./Modal-wsparcie";
 export default function Hero() {
     const { toggleColorMode, colorMode } = useColorMode();
@@ -27,7 +27,7 @@ export default function Hero() {
                                             alignSelf={'left'}>
                                             <Wrap spacing={4} justify={'left'}>
                                                 <WrapItem>
-                                                    <Link target="_blank" href="https://ekipalewicy.pl"><Button variant={'solid'} size={'lg'} rounded={0} color={"white"} bgColor={"brand.100"} _hover={{ bg: "brand.200" }}>Dołącz do Ekipy Lewicy</Button></Link>
+                                                    <Link target="_blank" href="https://ekipalewicy.pl"><Button leftIcon={<FaPeopleCarry/>} variant={'solid'} size={'lg'} rounded={0} color={"white"} bgColor={"brand.100"} _hover={{ bg: "brand.200" }}>Dołącz do Ekipy Lewicy</Button></Link>
                                                 </WrapItem>
                                                 <WrapItem>
                                                     <ModalSupport></ModalSupport>
@@ -65,7 +65,7 @@ export default function Hero() {
                                     alignSelf={'center'}>
                                     <Wrap spacing={4} justify={'center'}>
                                     <WrapItem>
-                                                    <Link target="_blank" href="https://ekipalewicy.pl"><Button variant={'solid'} size={'lg'} rounded={0} color={"white"} bgColor={"brand.100"} _hover={{ bg: "brand.200" }}>Dołącz do Ekipy Lewicy</Button></Link>
+                                                    <Link target="_blank" href="https://ekipalewicy.pl"><Button variant={'solid'} leftIcon={<FaPeopleCarry/>} size={'lg'} rounded={0} color={"white"} bgColor={"brand.100"} _hover={{ bg: "brand.200" }}>Dołącz do Ekipy Lewicy</Button></Link>
                                                 </WrapItem>
                                                 <WrapItem>
                                                 <ModalSupport></ModalSupport>

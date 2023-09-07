@@ -1,10 +1,11 @@
 import { Text, useDisclosure, Button, Modal, ModalOverlay, ModalContent, ModalHeader, ModalCloseButton, ModalBody, ModalFooter, useColorModeValue, Divider, Img } from "@chakra-ui/react"
+import { FaCoins } from "react-icons/fa"
 
 export default function ModalSupport() {
     const { isOpen, onOpen, onClose } = useDisclosure()
     return (
         <>
-            <Button onClick={onOpen} variant={'solid'} size={'lg'} rounded={0} color={"white"} bgColor={"brand.100"} _hover={{ bg: "brand.200" }}>Wesprzyj moją kampanię</Button>
+            <Button onClick={onOpen} leftIcon={<FaCoins/>} variant={'solid'} size={'lg'} rounded={0} color={"white"} bgColor={"brand.100"} _hover={{ bg: "brand.200" }}>Wesprzyj moją kampanię</Button>
 
             <Modal isOpen={isOpen} onClose={onClose}>
                 <ModalOverlay />
