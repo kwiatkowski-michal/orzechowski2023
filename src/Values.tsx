@@ -50,7 +50,7 @@ const Card = ({ heading, description, icon, href }: CardProps) => {
           </Text>
         </Box>
         <Button variant={'link'} color={"white"} rightIcon={<ExternalLinkIcon />} size={'sm'}>
-          <Link target='_blank' href={href}>Zobacz więcej
+          <Link target='_blank' href={href}>Dowód moich działań
           </Link>
         </Button>
       </Stack>
@@ -71,7 +71,7 @@ export default function Values() {
         Kandyduję z ostatniego miejsca na liście komitetu wyborczego Nowej Lewicy, żeby walczyć o Polskę otwartą, zieloną, świecką i dla każdego - bez względu na grubość portfela.
         </Text> */}
       </Stack>
-      <Container maxW={'5xl'} mt={12}>
+      <Container maxW={'5xl'} mt={5}>
         <Flex flexWrap="wrap" gridGap={6} justify="center">
           <Card
             heading={'Psycholog w każdej szkole'}
