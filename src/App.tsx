@@ -12,7 +12,7 @@ export const App = () => (
     <Hero />
     <FeaturesMain/>
     <Values/>
-    <Akcje />
+    {/* <Akcje /> */}
     <Footer/>
   </Box>
 )

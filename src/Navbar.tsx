@@ -22,19 +22,25 @@ const Links =
 [
     {
         "id": "1",
-        "link": "#wartosci",
+        "link": "#kim-jestem",
         "title": "Kim jestem?"
     },
     {
         "id": "2",
-        "link": "#postulaty",
-        "title": "Najważniejsze postulaty"
+        "link": "#jak-glosowac",
+        "title": "Jak głosować?"
     },
     {
         "id": "3",
-        "link": "#wpisy",
-        "title": "Najnowsze wpisy na X"
-    }
+        "link": "#postulaty",
+        "title": "Najważniejsze postulaty"
+    },
+  //   {
+  //     "id": "4",
+  //     "link": "#moje-dzialania",
+  //     "title": "Moje działania"
+  // }
+
 ]
 
 

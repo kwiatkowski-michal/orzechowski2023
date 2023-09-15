@@ -11,82 +11,43 @@ import {
   useColorModeValue,
   useBreakpointValue,
   Box,
+  Show,
+  Img,
+  Center,
 } from '@chakra-ui/react';
-import { ReactElement } from 'react';
-import { FaEquals, FaHandshake, FaHandPeace } from 'react-icons/fa';
-interface FeatureProps {
-  text: string;
-  iconBg: string;
-  icon?: ReactElement;
-}
-
-// const Feature = ({ text, icon, iconBg }: FeatureProps) => {
-//   return (
-//     <Stack direction={'row'} align={'center'}>
-//       <Flex
-//         w={8}
-//         h={8}
-//         align={'center'}
-//         justify={'center'}
-//         rounded={'full'}
-//         bg={iconBg}>
-//         {icon}
-//       </Flex>
-//       <Text fontWeight={"extrabold"}>{text}</Text>
-//     </Stack>
-//   );
-// };
-
 export default function FeaturesMain() {
   return (
-    <Box bgColor={useColorModeValue("white", "black")}>
-    <Container maxW={'5xl'} py={12}>
-      <SimpleGrid columns={{ base: 1, md: 2 }} spacing={10}>
-        <Stack spacing={4}>
-          <Heading fontWeight={"bold"} id='wartosci' color={useColorModeValue("brand.100", "gray.000")}>Kim jestem?</Heading>
-          <Text color={useColorModeValue("black", "gray.300")} fontSize={'lg'}>
-          Kandyduję z ostatniego miejsca na liście komitetu wyborczego Nowej Lewicy, żeby walczyć o Polskę otwartą, zieloną, świecką i dla każdego - bez względu na grubość portfela. 
-          </Text>
-          {/* <Stack
-            spacing={4}
-            divider={
-              <StackDivider
-                borderColor={useColorModeValue('black', 'gray.700')}
-              />
-            }>
-            <Feature
-              icon={
-                <Icon as={FaHandshake} color={'yellow.500'} w={5} h={5} />
-              }
-              iconBg={useColorModeValue('brand.300', 'gray.700')}
-              text={'Wolność'}
-            />
-            <Feature
-              icon={<Icon as={FaEquals} color={'green.500'} w={5} h={5} />}
-              iconBg={useColorModeValue('brand.300', 'gray.700')}
-              text={'Równość'}
-            />
-            <Feature
-              icon={
-                <Icon as={FaHandPeace} color={'purple.500'} w={5} h={5} />
-              }
-              iconBg={useColorModeValue('brand.300', 'gray.700')}
-              text={'Demokracja'}
-            />
-          </Stack> */}
-        </Stack>
-        <Flex boxShadow={"dark-lg"}>
-          <Image
+    <Box>
+      <Container maxW={'5xl'} pt={12}>
+        <SimpleGrid columns={{ base: 1, md: 2 }} spacing={10}>
+          <Stack spacing={4}>
+            <Heading fontWeight={"bold"} id='kim-jestem' color={useColorModeValue("brand.100", "gray.000")}>Kim jestem?</Heading>
+            <Text color={useColorModeValue("black", "gray.300")} fontSize={'lg'}>
+              Jestem społecznikiem z <Text as={"span"} fontWeight={'800'}>Grudziądza</Text> i wiceprzewodni-czącym Młodej Lewicy. Kandyduję z <Text as={"span"} fontWeight={'800'}>ostatniego miejsca na liście Lewicy</Text>, żeby stworzyć nam Polskę dla pokoleń. Państwo zielone, świeckie, otwarte i dla każdego - bez względu na grubość portfela. Pomóż mi w tej walce, <Text as={"span"} fontWeight={'800'}>zagłosuj na mnie!</Text>
+            </Text>
+          </Stack>
+          <Show above="md">
+            <Flex boxShadow={"dark-lg"}>
+              <Image alt={'Mateusz Orzechowski'} src={'/image1.jpeg'} objectFit={'cover'} />
+            </Flex>
+          </Show>
+        </SimpleGrid>
+        <Box py={12}>
+          <SimpleGrid columns={{ base: 1, md: 2 }} content='center' spacing={10}>
+            <Center>
+              <Image src={'/mapa.svg'} maxH={450} objectFit={'cover'}/>
+            </Center>
+            <Stack spacing={4}>
+              <Heading fontWeight={"bold"} id='jak-glosowac' color={useColorModeValue("brand.100", "gray.000")}>Jak głosować?</Heading>
+              <Text color={useColorModeValue("black", "gray.300")} fontSize={'lg'}>
+                W wyborach do Sejmu możesz oddać <Text as={"span"} fontWeight={'800'}>tylko jeden głos</Text>. Głosujesz na <Text as={"span"} fontWeight={'800'}>kandydata</Text>, a nie na partię. Wystarczy, że <Text as={"span"} fontWeight={'800'}>zaznaczysz mnie</Text> na karcie do głosowania. <Text as={"span"} fontWeight={'800'}>Nie musisz głosować na całą listę</Text> - wystarczy jeden krzyżyk przy moim nazwisku.
+              </Text>
+            </Stack>
 
-            alt={'Mateusz Orzechowski'}
-            src={
-              '/image1.jpeg'
-            }
-            objectFit={'cover'}
-          />
-        </Flex>
-      </SimpleGrid>
-    </Container>
+          </SimpleGrid>
+
+        </Box>
+      </Container>
     </Box>
   );
 }

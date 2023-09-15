@@ -2,9 +2,9 @@ import { Box, Container, Flex, Heading, Image, SimpleGrid, Stack, Text, useColor
 
 export default function Akcje() {
     return (
-        <Box bgColor={useColorModeValue("white", "black")}>
+        <Box>
             <Container maxW={'5xl'} py={12}>
-                <Heading mb={4} fontWeight={"bold"} id='wartosci' color={useColorModeValue("brand.100", "gray.000")}>Moje akcje</Heading>
+                <Heading mb={4} fontWeight={"bold"} id='dzialania' color={useColorModeValue("brand.100", "gray.000")}>Moje działania</Heading>
                 <SimpleGrid columns={{ base: 1, md: 2 }} spacing={10}>
                     <Flex boxShadow={"dark-lg"}>
                         <Image alt={'Mateusz Orzechowski'} src={'/image1.jpeg'} objectFit={'cover'} />
