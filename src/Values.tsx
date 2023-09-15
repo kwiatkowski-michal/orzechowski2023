@@ -50,7 +50,7 @@ const Card = ({ heading, description, icon, href }: CardProps) => {
           </Text>
         </Box>
         <Button variant={'link'} color={"white"} rightIcon={<ExternalLinkIcon />} size={'sm'}>
-          <Link target='_blank' href={href}>Zobacz więcej
+          <Link target='_blank' href={href}>Dowód moich działań
           </Link>
         </Button>
       </Stack>
@@ -67,35 +67,40 @@ export default function Values() {
         <Heading fontWeight={700} id='postulaty' color={useColorModeValue('brand.100', 'white')}>Najważniejsze
             postulaty
         </Heading>
-        {/* <Text color={useColorModeValue("black", "gray.300")} fontSize={'lg'}>
-        Kandyduję z ostatniego miejsca na liście komitetu wyborczego Nowej Lewicy, żeby walczyć o Polskę otwartą, zieloną, świecką i dla każdego - bez względu na grubość portfela.
-        </Text> */}
       </Stack>
-      <Container maxW={'5xl'} mt={12}>
+      <Container maxW={'5xl'} mt={5}>
         <Flex flexWrap="wrap" gridGap={6} justify="center">
           <Card
             heading={'Psycholog w każdej szkole'}
             icon={<Icon as={FaBrain} w={10} h={10} />}
             description={
-              'Postuluję wprowadzenie standardu opieki psychologicznej w polskich szkołach. Działając jako aktywista, angażowałem się w działania na rzecz zdrowia psychicznego młodzieży, takie jak organizacja Okrągłych Stołów.'
+              'Polska bije niechlubne rekordy jeśli chodzi o samobójstwa dzieci i młodzieży - musimy powiedzieć temu dość! Pora wprowadzić psychologa do każdej szkoły, który zapewni uczniom i uczennicom podstawową pomoc.'
             }
-            href={'https://torun.wyborcza.pl/torun/7,48723,28525750,mateusz-orzechowski-z-mlodej-lewicy-czas-by-oddac-glos-mlodym.html'}
+            href={'https://tylkotorun.pl/opinie/ilu-jeszcze-moich-znajomych-musi-odebrac-sobie-zycie-felieton/'}
           />
           <Card
-            heading={'Utworzenie Bydgoskiego Parku Narodowego'}
-            icon={<Icon as={FaLeaf} w={10} h={10} />}
+            heading={'Powołanie Funduszu Kruszenia Betonu'}
+            icon={<Icon as={FaHammer} w={10} h={10} />}
             description={
-              'Ostatni park narodowy powstał ponad 20 lat temu - czas to zmienić i utworzyć nowe parki narodowe, w tym Bydgoski Park Narodowy. Ponadto, wraz z Młodą Lewicą organizowałem panele dyskusyjne i okrągłe stoły o sytuacji lasów w Polsce.'
+              'Czas skończyć z betonozą w naszych miastach! Chcemy je zazielenić, tak jak zrobiliśmy to w Grudziądzu, gdzie w ramach inicjatywy lokalnej posadziliśmy drzewa i rośliny na ulicy Małogroblowej, Bydgoskiej i Łęgi, a w ostatnim czasie posadziliśmy dwie dorodne lipy na ulicy Portowej. Fundusz opiewający na kwotę 3 miliardów złotych wesprze samorządy w walce o zieleń miejską.'
             }
-            href={'https://grudziadz365.pl/pl/11_wiadomosci/84095_chcemy-lasu-nie-tartaku---panel-dyskusyjny-w-grudziadzu.html'}
+            href={'https://pomorska.pl/w-trosce-o-srodowisko-lewica-w-grudziadzu-posadzila-dwie-dorodne-lipy/ar/c1-17889551'}
+          />
+          <Card
+            heading={'Zakaz bezpłatnych staży'}
+            icon={<Icon as={FaMoneyBill} w={10} h={10} />}
+            description={
+              'Jak praca to płaca! Młodzi pracownicy to nie niewolnicy i zasługują na godną płacę za wykonywany staż. Musimy skończyć z darmowymi praktykami i stażami i nakazać pracodawcy wypłacenie minimalnej stawki godzinowej za każdą przepracowaną godzinę.'
+            }
+            href={'https://tylkotorun.pl/opinie/orzechowski-mloda-lewica-walczy-o-wasze-prawa/'}
           />
           <Card
             heading={'Prawa kobiet i osób LGBTQ+'}
             icon={<Icon as={FaEquals} w={10} h={10} />}
             description={
-              'Dążę do wprowadzenia w Polsce rozwiązań równościowych na wzór krajów Unii Europejskiej, które gwarantują prawa kobiet i osób LGBTQ+. Chcę, aby nasz kraj w końcu stał po cywilizowanej stronie Europy.'
+              'Prawa człowieka nie mogą być przedmiotem walki politycznej. Czas zagwarantować prawo do legalnej aborcji do 12 tygodnia ciąży, państwowy program in vitro, a także równość małżeńską i ucywilizowanie procesu korekty płci. Zawsze będę stał po stronie kobiet i osób wykluczonych.'
             }
-            href={'#'}
+            href={'https://grudziadz.naszemiasto.pl/protest-jestesmy-ludzmi-nie-ideologia-w-grudziadzu-zdjecia/ar/c1-7765474'}
           />
           <Card
             heading={'Autobus w każdej gminie, pociąg w każdym powiecie'}
@@ -103,23 +108,15 @@ export default function Values() {
             description={
               'Moim celem jest zapewnienie dostępu do transportu publicznego na poziomie gminnym i powiatowym, z autobusami docierającymi do każdej gminy i pociągami dostępnymi w każdym powiecie. Jednocześnie, chcę wprowadzenia biletu na komunikację zbiorową w kraju za 59zł.'
             }
-            href={'#'}
+            href={'https://www.eska.pl/torun/w-toruniu-krytykuja-podwyzki-cen-mloda-lewica-nie-zostawia-suchej-nitki-na-polityce-wladz-miejskich-aa-yo2R-HqjT-pgZM.html'}
           />
           <Card
-            heading={'Powołanie Funduszu Kruszenia Betonu'}
-            icon={<Icon as={FaHammer} w={10} h={10} />}
+            heading={'Pora na Bydgoski Park Narodowy!'}
+            icon={<Icon as={FaLeaf} w={10} h={10} />}
             description={
-              'Chcemy utworzenia Funduszu Kruszenia Betonu, który będzie wspierał inwestycje w rozwój infrastruktury i budowę, przyczyniając się to usuwania “betonozy” z miast'
+              'Ostatni Park Narodowy powstał… ponad 20 lat temu! Polska ma tereny, które warto i które trzeba chronić. Jednym z nich jest teren Puszczy Bydgoskiej, z której należy wydzielić Bydgoski Park Narodowy.'
             }
-            href={'#'}
-          />
-          <Card
-            heading={'Zakaz bezpłatnych staży'}
-            icon={<Icon as={FaMoneyBill} w={10} h={10} />}
-            description={
-              'Moim celem jest wprowadzenie zakazu bezpłatnych staży, aby zapewnić uczestnikom staży, często studentom, godziwe wynagrodzenie za ich pracę.'
-            }
-            href={'#'}
+            href={'https://grudziadz365.pl/pl/11_wiadomosci/84095_chcemy-lasu-nie-tartaku---panel-dyskusyjny-w-grudziadzu.html'}
           />
         </Flex>
       </Container>

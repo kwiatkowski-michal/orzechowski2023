@@ -1,10 +1,7 @@
-import { ExternalLinkIcon, Icon } from "@chakra-ui/icons";
+import { Icon } from "@chakra-ui/icons";
 import { Container, Stack, Heading, Button, Text, Box, Link, Wrap, WrapItem, useColorModeValue, Show, IconButton, useColorMode, Card, CardBody, CardHeader, Image, background } from "@chakra-ui/react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import IonIcon from "@reacticons/ionicons";
-import { relative } from "path";
 
-import { FaFacebook, FaFacebookMessenger, FaFacebookSquare, FaInstagramSquare, FaMoon, FaPeopleCarry, FaSun, FaTiktok, FaTwitter, FaTwitterSquare } from "react-icons/fa";
+import { FaFacebookMessenger, FaFacebookSquare, FaInstagramSquare, FaMoon, FaPeopleCarry, FaSun, FaTiktok, FaTwitter, FaTwitterSquare } from "react-icons/fa";
 import ModalSupport from "./Modal-wsparcie";
 export default function Hero() {
     const { toggleColorMode, colorMode } = useColorMode();
@@ -74,8 +71,8 @@ export default function Hero() {
                                 </Stack>
                                 <Wrap spacing={2} justify={'left'}>
                                         <Link target="_blank" href={'https://m.me/112361920273367'}><IconButton aria-label="messenger" rounded={0} color={"brand.100"} bgColor={"brand.300"} _hover={{ bg: "brand.100", color: "white" }} icon={<FaFacebookMessenger></FaFacebookMessenger>}></IconButton></Link>
-                                        <Link target="_blank" href={'https://tiktok.com/orzechowski_mat'}><IconButton aria-label="tiktok" rounded={0} color={"brand.100"} bgColor={"brand.300"} _hover={{ bg: "brand.100", color: "white" }} icon={<FaTiktok></FaTiktok>}></IconButton></Link>
-                                        <Link target="_blank" href={'https://www.tiktok.com/@orzechowski_mat'}><IconButton aria-label="facebook" rounded={0} color={"brand.100"} bgColor={"brand.300"} _hover={{ bg: "brand.100", color: "white" }} icon={<FaFacebookSquare></FaFacebookSquare>}></IconButton></Link>
+                                        <Link target="_blank" href={'https://tiktok.com/@orzechowski_mat'}><IconButton aria-label="tiktok" rounded={0} color={"brand.100"} bgColor={"brand.300"} _hover={{ bg: "brand.100", color: "white" }} icon={<FaTiktok></FaTiktok>}></IconButton></Link>
+                                        <Link target="_blank" href={'https://www.facebook.com/orzechowski.mat'}><IconButton aria-label="facebook" rounded={0} color={"brand.100"} bgColor={"brand.300"} _hover={{ bg: "brand.100", color: "white" }} icon={<FaFacebookSquare></FaFacebookSquare>}></IconButton></Link>
                                         <Link target="_blank" href={'https://x.com/orzechowski_mat'}><IconButton aria-label="x" rounded={0} color={"brand.100"} bgColor={"brand.300"} _hover={{ bg: "brand.100", color: "white" }} icon={<Icon viewBox="0 0 500 500" _hover={{ bg: "brand.100", color: "white" }}><path fill="currentColor" d="M389 48h71L306 224l181 240H345L234 319 107 464H36l165-188L27 48h145l101 133L389 48zm-25 374h39L152 88h-42l255 334z"/></Icon>}></IconButton></Link>
                                         </Wrap>
                             </Stack>

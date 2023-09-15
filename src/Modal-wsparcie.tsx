@@ -1,4 +1,4 @@
-import { Text, useDisclosure, Button, Modal, ModalOverlay, ModalContent, ModalHeader, ModalCloseButton, ModalBody, ModalFooter, useColorModeValue, Divider, Img } from "@chakra-ui/react"
+import { Text, useDisclosure, Button, Modal, ModalOverlay, ModalContent, ModalHeader, ModalCloseButton, ModalBody, ModalFooter, useColorModeValue, Divider, Img, Box } from "@chakra-ui/react"
 import { FaCoins } from "react-icons/fa"
 
 export default function ModalSupport() {
@@ -17,20 +17,18 @@ export default function ModalSupport() {
                         <Divider my={3}></Divider>
                         <Text>
                             <Text fontWeight={"800"} as={"span"}>
-                                Numer konta:&nbsp;
-                            </Text>
-                            64 1020 1026 3174 2000 0000 0025
+                                Numer konta: </Text>
+                            64 1020 1026 3174 2000 0000 1092
                         </Text>
                         <Text>
                             <Text fontWeight={"800"} as={"span"}>Tytułem: </Text>
-                            Darowizna - Mateusz Orzechowski - Okręg 5
+                            Darowizna - Mateusz Orzechowski
                         </Text>
                         <Divider my={3}></Divider>
                         <Text>
                         lub wpłać za pomocą kodu QR
                         </Text>
-                        <Img mt={3} height={40} src="kod.png"></Img>
-
+                        <Img height={40} mt={4} p={1} bgColor={"white"} src="kod.svg" ></Img>
                     </ModalBody>
 
                     <ModalFooter>
