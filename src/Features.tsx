@@ -35,7 +35,7 @@ export default function FeaturesMain() {
         <Box py={12}>
           <SimpleGrid columns={{ base: 1, md: 2 }} content='center' spacing={10}>
             <Center>
-              <Image src={'/mapa.svg'} maxH={450} objectFit={'cover'}/>
+              <Image src={useColorModeValue("/mapa.svg","/mapa-dark.svg")} maxH={450} objectFit={'cover'}/>
             </Center>
             <Stack spacing={4}>
               <Heading fontWeight={"bold"} id='jak-glosowac' color={useColorModeValue("brand.100", "gray.000")}>Jak głosować?</Heading>
