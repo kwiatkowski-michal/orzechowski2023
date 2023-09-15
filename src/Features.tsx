@@ -23,7 +23,7 @@ export default function FeaturesMain() {
           <Stack spacing={4}>
             <Heading fontWeight={"bold"} id='kim-jestem' color={useColorModeValue("brand.100", "gray.000")}>Kim jestem?</Heading>
             <Text color={useColorModeValue("black", "gray.300")} fontSize={'lg'}>
-              Jestem społecznikiem z <Text as={"span"} fontWeight={'800'}>Grudziądza</Text> i wiceprzewodni-czącym Młodej Lewicy. Kandyduję z <Text as={"span"} fontWeight={'800'}>ostatniego miejsca na liście Lewicy</Text>, żeby stworzyć nam Polskę dla pokoleń. Państwo zielone, świeckie, otwarte i dla każdego - bez względu na grubość portfela. Pomóż mi w tej walce, <Text as={"span"} fontWeight={'800'}>zagłosuj na mnie!</Text>
+              Jestem społecznikiem z <Text as={"span"} fontWeight={'800'}>Grudziądza</Text> i wiceprzewodniczącym Młodej Lewicy. Kandyduję z <Text as={"span"} fontWeight={'800'}>ostatniego miejsca na liście Lewicy</Text>, żeby stworzyć nam Polskę dla pokoleń. Państwo zielone, świeckie, otwarte i dla każdego - bez względu na grubość portfela. Pomóż mi w tej walce, <Text as={"span"} fontWeight={'800'}>zagłosuj na mnie!</Text>
             </Text>
           </Stack>
           <Show above="md">
