@@ -1,6 +1,6 @@
 {
   "short_name": "Mateusz Orzechowski - ostatni kandydat na liście Lewicy",
-  "name": "Oficjalna strona Mateusza Orzechowskiego - ostatniego kandydata na liście Lewicy w okręgu 5 (Toruń, Włocławek, Grudziądz)",
+  "name": "Oficjalna strona Mateusza Orzechowskiego",
   "icons": [
     {
       "src": "/images/icon.svg",
@@ -14,9 +14,10 @@
     }
   ],
   "id": "",
-  "start_url": "/",
   "background_color": "#e62846",
   "display": "standalone",
   "scope": "/",
-  "theme_color": "#e62846"
+  "theme_color": "#e62846",
+  "start_url": ".",
+  "description": "Strona ostatniego kandydata na liście Lewicy w okręgu 5 (Toruń, Włocławek, Grudziądz)"
 }
