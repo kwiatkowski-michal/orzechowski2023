@@ -6,7 +6,6 @@ export default function ModalSupport() {
     return (
         <>
             <Button onClick={onOpen} leftIcon={<FaCoins/>} variant={'solid'} size={'lg'} rounded={0} color={"white"} bgColor={"brand.100"} _hover={{ bg: "brand.200" }}>Wesprzyj moją kampanię</Button>
-
             <Modal isOpen={isOpen} onClose={onClose}>
                 <ModalOverlay />
                 <ModalContent>

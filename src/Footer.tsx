@@ -16,7 +16,7 @@ export default function Footer() {
 
   return (
     <Box
-    userSelect={"none"}
+      userSelect={"none"}
       bg={useColorModeValue('gray.50', 'gray.900')}
       color={useColorModeValue('gray.700', 'gray.200')}>
       <Container
@@ -29,7 +29,7 @@ export default function Footer() {
         align={{ base: 'center' }}>
 
         <Show above='md'>
-        
+
           <Text>Wykonanie: <Link href='https://kwiatkowskimichal.tech'>Michał Kwiatkowski</Link></Text>
           <Link href={'https://www.lewica.org.pl'}><Image src='logolewica.svg' height={"1.5rem"} /></Link>
           <Text>Materiał KW Nowa Lewica</Text>

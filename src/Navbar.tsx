@@ -14,6 +14,7 @@ import {
 } from '@chakra-ui/react'
 import { HamburgerIcon, CloseIcon, MoonIcon, SunIcon } from '@chakra-ui/icons'
 import React from 'react'
+import { Link } from '@chakra-ui/react'
 
 interface Props {
   children: React.ReactNode
@@ -47,21 +48,19 @@ const Links =
 const NavLink = (props: Props) => {
   const { children } = props
   return (
-    <Box
-      as="span"
+    <Button
+      variant={'text'}
       py="4"
       px={4}
       transition={"0.2s"}
       color={"white"}
+      backgroundColor={"inherit"}
       rounded={'0'}
       _hover={{
-        textDecoration: 'none',
-        color: "white",
-        fontWeight: "800",
         bg: useColorModeValue('brand.200', 'brand.100'),
       }}>
       {children}
-    </Box>
+    </Button>
   )
 }
 
@@ -75,7 +74,7 @@ export default function WithAction() {
       <Box userSelect={"none"} as="header"  position="absolute" w="100%">
         <Flex
               px={{md: '4'}}
-              pt={{md: '2'}}
+              pt={{md: '4'}}
               pb={{s: "6", md: "0"}}
               alignItems={'center'} justifyContent={'space-between'}>
           <IconButton
@@ -100,7 +99,7 @@ export default function WithAction() {
             <Box><Image userSelect={"none"} src="./logo-mo.svg" color={"white"} mt={2} height={"8"}></Image></Box>
             <HStack as={'nav'}  spacing={4} display={{ base: 'none', md: 'flex' }}>
               {Links.map((link) => (
-                <NavLink key={link.id}><a href={link.link}>{link.title}</a></NavLink>
+                <Link key={link.id} href={link.link}><NavLink>{link.title}</NavLink></Link>
               ))}
             </HStack>
           </HStack>
@@ -125,10 +124,10 @@ export default function WithAction() {
         </Flex>
 
         {isOpen ? (
-          <Box  bgColor={'brand.100'} display={{ md: 'none' }}>
+          <Box bgColor={'brand.100'} display={{ md: 'none' }} mb={10}>
             <Stack as={'nav'}>
               {Links.map((link) => (
-                <NavLink key={link.id}><a href={link.link}>{link.title}</a></NavLink>
+                <Link key={link.id} href={link.link}><NavLink>{link.title}</NavLink></Link>
               ))}
             </Stack>
           </Box>

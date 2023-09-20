@@ -5,10 +5,12 @@ import Values from "./Values"
 import { Box, Skeleton } from "@chakra-ui/react"
 import WithAction from "./Navbar"
 import Akcje from "./Akcje"
+import Navbar from "./newNavbar"
 
 export const App = () => (
     <Box>
-    <WithAction/>
+      <Navbar/>
+    {/* <WithAction/> */}
     <Hero />
     <FeaturesMain/>
     <Values/>

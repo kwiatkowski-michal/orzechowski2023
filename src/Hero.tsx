@@ -3,6 +3,7 @@ import { Container, Stack, Heading, Button, Text, Box, Link, Wrap, WrapItem, use
 
 import { FaFacebookMessenger, FaFacebookSquare, FaInstagramSquare, FaMoon, FaPeopleCarry, FaSun, FaTiktok, FaTwitter, FaTwitterSquare } from "react-icons/fa";
 import ModalSupport from "./Modal-wsparcie";
+import { RiTwitterXFill } from "react-icons/ri";
 export default function Hero() {
     const { toggleColorMode, colorMode } = useColorMode();
     return (
@@ -10,7 +11,7 @@ export default function Hero() {
             <Show above="md">
                 
                 <Box bgColor={useColorModeValue("brand.100", "gray.900")}>
-                    <Container maxW={'4xl'} pt={12}>
+                    <Container maxW={'4xl'}>
                         <Stack w={"100%"} as={Box} textAlign={'left'} spacing={{ base: 8, md: 14 }} py={{ base: 20, md: 31 }}>
                             <Card rounded={0} p={20} boxShadow={"dark-lg"} bgImage={"./image3.jpg"} bgPosition="top"
   bgRepeat="no-repeat" bgSize={"cover"}>
@@ -35,7 +36,7 @@ export default function Hero() {
                                         <Link target="_blank" href={'https://m.me/112361920273367'}><IconButton aria-label="messenger" rounded={0} color={"brand.100"} bgColor={"brand.300"} _hover={{ bg: "brand.100", color: "white"}} icon={<FaFacebookMessenger></FaFacebookMessenger>}></IconButton></Link>
                                         <Link target="_blank" href={'https://www.tiktok.com/@orzechowski_mat'}><IconButton aria-label="tiktok" rounded={0} color={"brand.100"} bgColor={"brand.300"} _hover={{ bg: "brand.100", color: "white" }} icon={<FaTiktok></FaTiktok>}></IconButton></Link>
                                         <Link target="_blank" href={'https://facebook.com/orzechowski.mat'}><IconButton aria-label="facebook" rounded={0} color={"brand.100"} bgColor={"brand.300"} _hover={{ bg: "brand.100", color: "white" }} icon={<FaFacebookSquare></FaFacebookSquare>}></IconButton></Link>
-                                        <Link target="_blank" href={'https://x.com/orzechowski_mat'}><IconButton aria-label="x" rounded={0} color={"brand.100"} bgColor={"brand.300"} _hover={{ bg: "brand.100", color: "white" }} icon={<Icon viewBox="0 0 500 500" _hover={{ bg: "brand.100", color: "white" }}><path fill="currentColor" d="M389 48h71L306 224l181 240H345L234 319 107 464H36l165-188L27 48h145l101 133L389 48zm-25 374h39L152 88h-42l255 334z"/></Icon>}></IconButton></Link>
+                                        <Link target="_blank" href={'https://x.com/orzechowski_mat'}><IconButton aria-label="x" rounded={0} color={"brand.100"} bgColor={"brand.300"} _hover={{ bg: "brand.100", color: "white" }} icon={<RiTwitterXFill/>}></IconButton></Link>
                                         </Wrap>
                                         
                                     </Stack>
@@ -73,7 +74,7 @@ export default function Hero() {
                                         <Link target="_blank" href={'https://m.me/112361920273367'}><IconButton aria-label="messenger" rounded={0} color={"brand.100"} bgColor={"brand.300"} _hover={{ bg: "brand.100", color: "white" }} icon={<FaFacebookMessenger></FaFacebookMessenger>}></IconButton></Link>
                                         <Link target="_blank" href={'https://tiktok.com/@orzechowski_mat'}><IconButton aria-label="tiktok" rounded={0} color={"brand.100"} bgColor={"brand.300"} _hover={{ bg: "brand.100", color: "white" }} icon={<FaTiktok></FaTiktok>}></IconButton></Link>
                                         <Link target="_blank" href={'https://www.facebook.com/orzechowski.mat'}><IconButton aria-label="facebook" rounded={0} color={"brand.100"} bgColor={"brand.300"} _hover={{ bg: "brand.100", color: "white" }} icon={<FaFacebookSquare></FaFacebookSquare>}></IconButton></Link>
-                                        <Link target="_blank" href={'https://x.com/orzechowski_mat'}><IconButton aria-label="x" rounded={0} color={"brand.100"} bgColor={"brand.300"} _hover={{ bg: "brand.100", color: "white" }} icon={<Icon viewBox="0 0 500 500" _hover={{ bg: "brand.100", color: "white" }}><path fill="currentColor" d="M389 48h71L306 224l181 240H345L234 319 107 464H36l165-188L27 48h145l101 133L389 48zm-25 374h39L152 88h-42l255 334z"/></Icon>}></IconButton></Link>
+                                        <Link target="_blank" href={'https://x.com/orzechowski_mat'}><IconButton aria-label="x" rounded={0} color={"brand.100"} bgColor={"brand.300"} _hover={{ bg: "brand.100", color: "white" }} icon={<RiTwitterXFill/>}></IconButton></Link>
                                         </Wrap>
                             </Stack>
                         </Stack>
