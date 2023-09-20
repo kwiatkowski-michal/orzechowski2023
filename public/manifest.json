@@ -18,5 +18,32 @@
   "scope": "/",
   "theme_color": "#e62846",
   "start_url": ".",
-  "description": "Strona ostatniego kandydata na liście Lewicy w okręgu 5 (Toruń, Włocławek, Grudziądz)"
+  "description": "Strona ostatniego kandydata na liście Lewicy w okręgu 5 (Toruń, Włocławek, Grudziądz)",
+  "screenshots": [
+    {
+      "src": "/screenshots/screenshot1.png",
+      "type": "image/png",
+      "sizes": "540x720",
+      "form_factor": "narrow"
+    },
+    {
+      "src": "/screenshots/screenshot2.png",
+      "type": "image/png",
+      "sizes": "540x720",
+      "form_factor": "narrow"
+    },
+    {
+      "src": "/screenshots/screenshot1-wide.png",
+      "type": "image/png",
+      "sizes": "1463x713",
+      "form_factor": "wide"
+    },
+    {
+      "src": "/screenshots/screenshot2-wide.png",
+      "type": "image/png",
+      "sizes": "1463x713",
+      "form_factor": "wide"
+    }
+  ]
+
 }
