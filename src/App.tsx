@@ -7,10 +7,10 @@ import WithAction from "./Navbar"
 import Akcje from "./Akcje"
 import Navbar from "./newNavbar"
 
+
 export const App = () => (
     <Box>
       <Navbar/>
-    {/* <WithAction/> */}
     <Hero />
     <FeaturesMain/>
     <Values/>

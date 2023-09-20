@@ -61,7 +61,7 @@ export default function Navbar() {
                     <Spacer />
                     <Box>
                     <Menu>
-                        <MenuButton as={Button} bg={"brand.100"} _hover={{ bg: 'brand.200' }} _expanded={{ bg: 'brand.200' }} leftIcon={<FaList />} rounded={0}>
+                        <MenuButton color={"white"} as={Button} bg={"brand.100"} _hover={{ bg: 'brand.200' }} _expanded={{ bg: 'brand.200' }} leftIcon={<FaList />} rounded={0}>
                             Menu
                         </MenuButton>
                         <MenuList rounded={0} >
