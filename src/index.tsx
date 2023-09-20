@@ -2,7 +2,7 @@ import { ChakraProvider, ColorModeScript, extendTheme, type ThemeConfig } from "
 import * as React from "react"
 import * as ReactDOM from "react-dom/client"
 import { App } from "./App"
-import * as serviceWorker from "./serviceWorker"
+import * as serviceWorker from "./serviceWorkerRegistration"
 import '@fontsource/poppins';
 
 const container = document.getElementById("root")
@@ -41,4 +41,4 @@ root.render(
   </React.StrictMode>,
 )
 
-serviceWorker.register()
+serviceWorker.register();
