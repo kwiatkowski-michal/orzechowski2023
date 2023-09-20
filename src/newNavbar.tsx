@@ -1,10 +1,8 @@
-import { ChevronDownIcon, MoonIcon, SunIcon } from "@chakra-ui/icons";
+import { ChevronDownIcon, DownloadIcon, MoonIcon, SunIcon } from "@chakra-ui/icons";
 import { Box, Button, ButtonGroup, Flex, HStack, Heading, IconButton, Image, Link, ListIcon, Menu, MenuButton, MenuDivider, MenuItem, MenuItemOption, MenuList, MenuOptionGroup, Show, Spacer, background, useColorMode, useColorModeValue, useDisclosure } from "@chakra-ui/react";
 import { FaUser, FaVoteYea } from "react-icons/fa";
 import { FaList, FaListCheck } from "react-icons/fa6";
-import { IoInvertModeOutline } from "react-icons/io5";
-import { IconBase } from "react-icons/lib";
-
+declare const self: ServiceWorkerGlobalScope;
 const Tabs =
     [
         {
@@ -35,8 +33,8 @@ const Tabs =
 
 export default function Navbar() {
     const bgbutton = useColorModeValue("brand.200", "brand.100")
-    const { colorMode, toggleColorMode }  = useColorMode()
-  const { isOpen, onOpen, onClose } = useDisclosure()
+    const { colorMode, toggleColorMode } = useColorMode()
+    const { isOpen, onOpen, onClose } = useDisclosure()
     return (
         <>
             <Show above="md">
@@ -48,30 +46,31 @@ export default function Navbar() {
                                 <Link key={i} href={tab.link}><Button transition={"0.2s"} color={"white"} backgroundColor={"inherit"} rounded={'0'} _hover={{ bg: bgbutton }} variant="ghost" ml={4}>{tab.title}</Button></Link>
                             ))}
                             <Spacer />
-<IconButton aria-label="color mode" color={"white"} rounded={0} bg={useColorModeValue("brand.100", "gray.900")} _hover={{ bg: useColorModeValue("brand.200", "brand.100") }} onClick={toggleColorMode}>{colorMode === 'light' ? <SunIcon /> : <MoonIcon />}</IconButton>
+                            <IconButton aria-label="color mode" color={"white"} rounded={0} bg={useColorModeValue("brand.100", "gray.900")} _hover={{ bg: useColorModeValue("brand.200", "brand.100") }} onClick={self.skipWaiting}>{<DownloadIcon/>}</IconButton>
+                            <IconButton aria-label="color mode" color={"white"} rounded={0} bg={useColorModeValue("brand.100", "gray.900")} _hover={{ bg: useColorModeValue("brand.200", "brand.100") }} onClick={toggleColorMode}>{colorMode === 'light' ? <SunIcon /> : <MoonIcon />}</IconButton>
                         </HStack>
                     </Box>
                 </Box>
             </Show>
             <Show below="md">
-                <Flex p={5} pos={"absolute"} w={"100%"} justifyContent={'space-between'} minWidth='max-content' alignItems='center'  gap='2'>
+                <Flex p={5} pos={"absolute"} w={"100%"} justifyContent={'space-between'} minWidth='max-content' alignItems='center' gap='2'>
                     <Box>
-                    <Image src="logo-mo.svg" alt="Mateusz Orzechowski" height={10} />
+                        <Image src="logo-mo.svg" alt="Mateusz Orzechowski" height={10} />
                     </Box>
                     <Spacer />
                     <Box>
-                    <Menu>
-                        <MenuButton color={"white"} as={Button} bg={"brand.100"} _hover={{ bg: 'brand.200' }} _expanded={{ bg: 'brand.200' }} leftIcon={<FaList />} rounded={0}>
-                            Menu
-                        </MenuButton>
-                        <MenuList rounded={0} >
-                        {Tabs.map((tab, i) => (
-                                <Link key={i} _hover={{ textDecoration: "none" }} href={tab.link}><MenuItem icon={tab.icon}>{tab.title}</MenuItem></Link>
-                            ))}
-                            <MenuDivider />
-                            <MenuItem onClick={toggleColorMode} icon={colorMode === 'light' ? <MoonIcon /> : <SunIcon />}>Zmień motyw (obecny: {colorMode === 'light' ? 'jasny' : 'ciemny'})</MenuItem>
-                        </MenuList>
-                    </Menu>
+                        <Menu>
+                            <MenuButton color={"white"} as={Button} bg={"brand.100"} _hover={{ bg: 'brand.200' }} _expanded={{ bg: 'brand.200' }} leftIcon={<FaList />} rounded={0}>
+                                Menu
+                            </MenuButton>
+                            <MenuList rounded={0} >
+                                {Tabs.map((tab, i) => (
+                                    <Link key={i} _hover={{ textDecoration: "none" }} href={tab.link}><MenuItem icon={tab.icon}>{tab.title}</MenuItem></Link>
+                                ))}
+                                <MenuDivider />
+                                <MenuItem onClick={toggleColorMode} icon={colorMode === 'light' ? <MoonIcon /> : <SunIcon />}>Zmień motyw (obecny: {colorMode === 'light' ? 'jasny' : 'ciemny'})</MenuItem>
+                            </MenuList>
+                        </Menu>
                     </Box>
                 </Flex>
             </Show>
