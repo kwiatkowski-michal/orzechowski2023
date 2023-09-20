@@ -101,7 +101,7 @@ export default function Navbar() {
                 <Flex p={5} pos={"absolute"} w={"100%"} justifyContent={'space-between'} minWidth='max-content' alignItems='center' gap='2'>
                     <Box>
                         <Image src="logo-mo.svg" alt="Mateusz Orzechowski" height={10} />
-                    </Box>
+                    </Box> 
                     <Spacer />
                     <Box>
                         <Menu>
