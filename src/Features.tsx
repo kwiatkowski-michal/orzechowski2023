@@ -46,7 +46,7 @@ export default function FeaturesMain() {
               <Image src={useColorModeValue("/mapa.svg", "/mapa-dark.svg")} maxH={450} objectFit={'cover'} />
             </Center>
             <Stack spacing={4}>
-              <Heading fontWeight={"bold"} id='jak-glosowac' color={useColorModeValue("brand.100", "gray.000")}>Jak głosować?</Heading>
+              <Heading fontWeight={"bold"} id='glosowanie' color={useColorModeValue("brand.100", "gray.000")}>Jak głosować?</Heading>
               <Text color={useColorModeValue("black", "gray.300")} fontSize={'lg'}>
                 W wyborach do Sejmu możesz oddać <Text as={"span"} fontWeight={'800'}>tylko jeden głos</Text>. Głosujesz na <Text as={"span"} fontWeight={'800'}>kandydata</Text>, a nie na partię. Wystarczy, że <Text as={"span"} fontWeight={'800'}>zaznaczysz mnie</Text> na karcie do głosowania. <Text as={"span"} fontWeight={'800'}>Nie musisz głosować na całą listę</Text> - wystarczy jeden krzyżyk przy moim nazwisku.
               </Text>
