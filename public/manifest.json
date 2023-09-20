@@ -23,27 +23,42 @@
     {
       "src": "/screenshots/screenshot1.png",
       "type": "image/png",
-      "sizes": "540x720",
+      "sizes": "1080x1920",
       "form_factor": "narrow"
     },
     {
       "src": "/screenshots/screenshot2.png",
       "type": "image/png",
-      "sizes": "540x720",
+      "sizes": "1080x1920",
       "form_factor": "narrow"
     },
     {
       "src": "/screenshots/screenshot1-wide.png",
       "type": "image/png",
-      "sizes": "1463x713",
+      "sizes": "1920x1080",
       "form_factor": "wide"
     },
     {
       "src": "/screenshots/screenshot2-wide.png",
       "type": "image/png",
-      "sizes": "1463x713",
+      "sizes": "1920x1080",
       "form_factor": "wide"
     }
+  ],
+  "shortcuts": [
+    {
+      "name": "Dołącz do Ekipy Lewicy!",
+      "short_name": "Ekipa Lewicy",
+      "description": "Wejdź na stronę ekipalewicy.pl i pomóż w kampanii",
+      "url": "https://ekipalewicy.pl",
+      "icons": [{ "src": "/shortcuts/shortcut2.png", "sizes": "1080x1080" }]
+    },
+    {
+      "name": "Wesprzyj moją kampanię!",
+      "short_name": "Wesprzyj kampanię",
+      "description": "Wpłać na mój Fundusz Wyborczy i pomóż mi w kampanii",
+      "url": "https://www.facebook.com/orzechowski.mat/posts/pfbid02Dm7xHDRf6emqojFFFFtoQs6NPEwg59aBce7e4ySx4d9qKR6CCtRfbLvqE2NCBkPAl",
+      "icons": [{ "src": "/shortcuts/shortcut1.png", "sizes": "1080x1080" }]
+    }
   ]
-
 }
