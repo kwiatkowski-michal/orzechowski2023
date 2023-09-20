@@ -65,7 +65,7 @@ export default function Navbar() {
                             </MenuButton>
                             <MenuList rounded={0} >
                                 {Tabs.map((tab, i) => (
-                                    <Link key={i} href={tab.link}><MenuItem icon={tab.icon}>{tab.title}</MenuItem></Link>
+                                    <MenuItem as={"a"} href={tab.link} icon={tab.icon}>{tab.title}</MenuItem>
                                 ))}
                                 <MenuDivider />
                                 <MenuItem onClick={toggleColorMode} icon={colorMode === 'light' ? <MoonIcon /> : <SunIcon />}>Zmień motyw (obecny: {colorMode === 'light' ? 'jasny' : 'ciemny'})</MenuItem>
