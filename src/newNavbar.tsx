@@ -1,5 +1,5 @@
 import { ChevronDownIcon, DownloadIcon, MoonIcon, SunIcon } from "@chakra-ui/icons";
-import { Box, Button, ButtonGroup, Flex, HStack, Heading, IconButton, Image, Link, ListIcon, Menu, MenuButton, MenuDivider, MenuItem, MenuItemOption, MenuList, MenuOptionGroup, Show, Spacer, Tooltip, background, useColorMode, useColorModeValue, useDisclosure } from "@chakra-ui/react";
+import { Box, Button, ButtonGroup, Flex, HStack, Heading, IconButton, Image, Link, ListIcon, Menu, MenuButton, MenuDivider, MenuItem, MenuItemOption, MenuList, MenuOptionGroup, Show, Spacer, Tooltip, background, useColorMode, useColorModeValue, useDisclosure, useToast } from "@chakra-ui/react";
 import { FaUser, FaVoteYea } from "react-icons/fa";
 import { FaList, FaListCheck } from "react-icons/fa6";
 
@@ -26,6 +26,7 @@ function przejdzDoGlosowanie() {
   
 
 async function clearCacheAndInstallServiceWorker() {
+    const toast = useToast()
     try {
         // Usunięcie cache strony
         await caches.delete('my-page-cache');
@@ -36,10 +37,23 @@ async function clearCacheAndInstallServiceWorker() {
 
         // Aktualizacja cache po instalacji service workera
         await registration.update();
-
+        toast({
+            title: 'Zaktualizowano pomyślnie',
+            description: "Aktualizacja została zainstalowana. Uruchom ponownie, aby zobaczyć zmiany.",
+            status: 'success',
+            duration: 9000,
+            isClosable: true,
+          })
         console.log('Cache strony wyczyszczone, a Service Worker zainstalowany i zaktualizowany.');
     } catch (error) {
         console.error('Wystąpił błąd podczas czyszczenia cache i instalacji Service Workera:', error);
+        toast({
+            title: 'Błąd aktualizacji',
+            description: "Wystąpił błąd podczas aktualizacji. Twoja przeglądarka nie wspiera aktualizacji.",
+            status: 'error',
+            duration: 9000,
+            isClosable: true,
+          })
     }
 }
 
