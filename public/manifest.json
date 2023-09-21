@@ -64,14 +64,14 @@
       "name": "Dołącz do Ekipy Lewicy!",
       "short_name": "Ekipa Lewicy",
       "description": "Wejdź na stronę ekipalewicy.pl i pomóż w kampanii",
-      "url": "#",
+      "url": "/",
       "icons": [{ "src": "/shortcuts/shortcut2.png", "sizes": "1080x1080" }]
     },
     {
       "name": "Wesprzyj moją kampanię!",
       "short_name": "Wesprzyj kampanię",
       "description": "Wpłać na mój Fundusz Wyborczy i pomóż mi w kampanii",
-      "url": "#",
+      "url": "/",
       "icons": [{ "src": "/shortcuts/shortcut1.png", "sizes": "1080x1080" }]
     }
   ]
