@@ -24,7 +24,7 @@ interface CardProps {
 const Card = ({ heading, description, icon, href }: CardProps) => {
   return (
     <Box
-      maxW={{ base: 'full', md: '314px' }}
+      maxW={{ base: 'full', lg: '48.7%' }}
       w={'full'}
       bg={useColorModeValue('brand.100', 'gray.900')}
       _hover={{bgColor: useColorModeValue('brand.100', 'brand.200')}}
@@ -49,10 +49,10 @@ const Card = ({ heading, description, icon, href }: CardProps) => {
             {description}
           </Text>
         </Box>
-        <Button variant={'link'} color={"white"} rightIcon={<ExternalLinkIcon />} size={'sm'}>
-          <Link target='_blank' href={href}>Dowód moich działań
-          </Link>
-        </Button>
+        <Link target='_blank' href={href}><Button rounded={0} bgColor={useColorModeValue('brand.200', 'brand.100')} _hover={{backgroundColor: useColorModeValue('brand.200', 'brand.100'), boxShadow: "4px 4px 0px 2px #f6e9e5"}} color={"white"} rightIcon={<ExternalLinkIcon />} size={'sm'}>
+          Dowód moich działań
+          
+        </Button></Link>
       </Stack>
     </Box>
   );

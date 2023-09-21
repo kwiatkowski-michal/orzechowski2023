@@ -4,13 +4,26 @@
   "name": "Oficjalna strona Mateusza Orzechowskiego",
   "icons": [
     {
-      "src": "/icons/icon.svg",
-      "type": "image/svg+xml"
+      "src": "/icons/icon-svg.svg",
+      "type": "image/svg+xml",
+      "purpose":"any maskable"
     },
     {
-      "src": "/icons/icon.png",
+      "src": "/icons/icon-www.png",
       "type": "image/png",
       "sizes": "512x512"
+    },
+    {
+      "src": "/icons/maskable_icon.png",
+      "type": "image/png",
+      "sizes": "1024x1024",
+      "purpose": "maskable"
+    },
+    {
+      "src": "/icons/maskable_icon_x512.png",
+      "type": "image/png",
+      "sizes": "512x512",
+      "purpose": "maskable"
     }
   ],
   "id": "/",
@@ -51,14 +64,14 @@
       "name": "Dołącz do Ekipy Lewicy!",
       "short_name": "Ekipa Lewicy",
       "description": "Wejdź na stronę ekipalewicy.pl i pomóż w kampanii",
-      "url": "https://ekipalewicy.pl",
+      "url": "#",
       "icons": [{ "src": "/shortcuts/shortcut2.png", "sizes": "1080x1080" }]
     },
     {
       "name": "Wesprzyj moją kampanię!",
       "short_name": "Wesprzyj kampanię",
       "description": "Wpłać na mój Fundusz Wyborczy i pomóż mi w kampanii",
-      "url": "https://www.facebook.com/orzechowski.mat/posts/pfbid02Dm7xHDRf6emqojFFFFtoQs6NPEwg59aBce7e4ySx4d9qKR6CCtRfbLvqE2NCBkPAl",
+      "url": "#",
       "icons": [{ "src": "/shortcuts/shortcut1.png", "sizes": "1080x1080" }]
     }
   ]

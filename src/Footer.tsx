@@ -31,12 +31,12 @@ export default function Footer() {
         <Show above='md'>
 
           <Text>Wykonanie: <Link href='https://kwiatkowskimichal.tech'>Michał Kwiatkowski</Link></Text>
-          <Link href={'https://www.lewica.org.pl'}><Image src='logolewica.svg' height={"1.5rem"} /></Link>
+          <Link href={'https://www.lewica2023.org'}><Image src='logolewica.svg' height={"1.5rem"} /></Link>
           <Text>Materiał KW Nowa Lewica</Text>
         </Show>
         <Show below='md'>
-          <Text>Wykonanie: Michał Kwiatkowski</Text>
-          <Button size='xs' rightIcon={<ExternalLinkIcon />} color={"brand.100"} borderColor={"brand.100"} variant='outline'><Link target='_blank' href={'https://www.lewica.org.pl'}>Materiał KW Nowa Lewica</Link></Button>
+          <Text>Wykonanie: <Link href='https://kwiatkowskimichal.tech'>Michał Kwiatkowski</Link></Text>
+          <Button size='xs' rounded={0} rightIcon={<ExternalLinkIcon />} color={"brand.100"} borderColor={"brand.100"} variant='outline'><Link target='_blank' href={'https://www.lewica2023.org'}>Materiał KW Nowa Lewica</Link></Button>
         </Show>
       </Container>
     </Box>

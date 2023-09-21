@@ -11,7 +11,7 @@ export default function Hero() {
             <Show above="md">
                 
                 <Box bgColor={useColorModeValue("brand.100", "gray.900")}>
-                    <Container maxW={'4xl'}>
+                    <Container maxW={'5xl'}>
                         <Stack w={"100%"} as={Box} textAlign={'left'} spacing={{ base: 8, md: 14 }} py={{ base: 20, md: 31 }}>
                             <Card rounded={0} p={20} boxShadow={"dark-lg"} bgImage={"./image3.jpg"} bgPosition="top"
   bgRepeat="no-repeat" bgSize={"cover"}>
