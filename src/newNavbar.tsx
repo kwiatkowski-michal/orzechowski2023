@@ -42,6 +42,7 @@ async function clearCacheAndInstallServiceWorker() {
             description: "Aktualizacja została zainstalowana. Uruchom ponownie, aby zobaczyć zmiany.",
             status: 'success',
             duration: 9000,
+            position: "bottom-right",
             isClosable: true,
           })
         console.log('Cache strony wyczyszczone, a Service Worker zainstalowany i zaktualizowany.');
@@ -51,6 +52,7 @@ async function clearCacheAndInstallServiceWorker() {
             title: 'Błąd aktualizacji',
             description: "Wystąpił błąd podczas aktualizacji. Twoja przeglądarka nie wspiera aktualizacji.",
             status: 'error',
+            position: "bottom-right",
             duration: 9000,
             isClosable: true,
           })
