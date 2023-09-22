@@ -1,4 +1,4 @@
-import { Text, useDisclosure, Button, Modal, ModalOverlay, ModalContent, ModalHeader, ModalCloseButton, ModalBody, ModalFooter, useColorModeValue, Divider, Img, Box } from "@chakra-ui/react"
+import { Text, useDisclosure, Button, Modal, ModalOverlay, ModalContent, ModalHeader, ModalCloseButton, ModalBody, useColorModeValue, Divider, Img } from "@chakra-ui/react"
 import { FaCoins } from "react-icons/fa"
 
 export default function ModalSupport() {
@@ -29,13 +29,6 @@ export default function ModalSupport() {
                         </Text>
                         <Img height={40} mt={4} p={1} bgColor={"white"} src="kod.svg" ></Img>
                     </ModalBody>
-
-                    <ModalFooter>
-                        {/* <Button colorScheme='blue' mr={3} onClick={onClose}>
-                Close
-              </Button> */}
-                        {/* <Button variant='ghost'>Secondary Action</Button> */}
-                    </ModalFooter>
                 </ModalContent>
             </Modal>
         </>

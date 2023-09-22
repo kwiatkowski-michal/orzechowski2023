@@ -31,7 +31,6 @@ const fonts = {
 }
 
 const theme = extendTheme({colors, fonts, config})
-
 root.render(
   <React.StrictMode>
     <ChakraProvider theme={theme}>

@@ -1,20 +1,19 @@
 import Hero from "./Hero"
-import FeaturesMain from "./Features"
+import FeaturesMain from "./Opis"
 import Footer from "./Footer"
-import Values from "./Values"
-import { Box, Skeleton } from "@chakra-ui/react"
-import WithAction from "./Navbar"
+import Values from "./Program"
+import { Box } from "@chakra-ui/react"
 import Akcje from "./Akcje"
 import Navbar from "./newNavbar"
 
 
 export const App = () => (
-    <Box>
-      <Navbar/>
+  <Box>
+    <Navbar />
     <Hero />
-    <FeaturesMain/>
-    <Values/>
+    <FeaturesMain />
+    <Values />
     {/* <Akcje /> */}
-    <Footer/>
+    <Footer />
   </Box>
 )

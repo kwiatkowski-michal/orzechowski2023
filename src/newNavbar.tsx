@@ -1,5 +1,5 @@
-import { ChevronDownIcon, DownloadIcon, MoonIcon, SunIcon } from "@chakra-ui/icons";
-import { Box, Button, ButtonGroup, Flex, HStack, Heading, IconButton, Image, Link, ListIcon, Menu, MenuButton, MenuDivider, MenuItem, MenuItemOption, MenuList, MenuOptionGroup, Show, Spacer, Tooltip, background, useColorMode, useColorModeValue, useDisclosure, useToast } from "@chakra-ui/react";
+import { DownloadIcon, MoonIcon, SunIcon } from "@chakra-ui/icons";
+import { Box, Button, Flex, HStack, IconButton, Image, Link, Menu, MenuButton, MenuDivider, MenuItem, MenuList, Show, Spacer, Tooltip, useColorMode, useColorModeValue, useToast } from "@chakra-ui/react";
 import { FaUser, FaVoteYea } from "react-icons/fa";
 import { FaList, FaListCheck } from "react-icons/fa6";
 
@@ -91,7 +91,6 @@ const Tabs =
 export default function Navbar() {
     const bgbutton = useColorModeValue("brand.200", "brand.100")
     const { colorMode, toggleColorMode } = useColorMode()
-    const { isOpen, onOpen, onClose } = useDisclosure()
     return (
         <>
             <Show above="md">
