@@ -6,21 +6,17 @@ import {
   Heading,
   Text,
   Stack,
-  StackDivider,
-  Icon,
   useColorModeValue,
-  useBreakpointValue,
   Box,
   Show,
-  Img,
   Center,
   Wrap,
   WrapItem,
   Link,
   Button,
 } from '@chakra-ui/react';
-import { FaCheckSquare, FaLocationArrow, FaPeopleCarry, FaVoteYea } from 'react-icons/fa';
-import { MdBallot, MdHowToVote, MdWhereToVote } from 'react-icons/md';
+import { MdHowToVote, MdWhereToVote } from 'react-icons/md';
+import { MainButton } from '../komponenty/components';
 
 
 export default function FeaturesMain() {
@@ -52,10 +48,10 @@ export default function FeaturesMain() {
               </Text>
               <Wrap spacing={4} justify={{ base: 'center', md: 'left' }}>
                 <WrapItem>
-                  <Link target="_blank" href="https://wybory.gov.pl"><Button leftIcon={<MdWhereToVote/>} variant={'solid'} size={'lg'} rounded={0} color={"white"} bgColor={"brand.100"} _hover={{ bg: "brand.200" }}>Sprawdź swój okręg wyborczy</Button></Link>
+                  <MainButton link={'https://wybory.gov.pl'} icon={<MdWhereToVote/>}>Sprawdź swój okęg wyborczy</MainButton>
                 </WrapItem>
                 <WrapItem>
-                <Link target="_blank" href="https://www.gov.pl/web/gov/zmien-miejsce-glosowania"><Button leftIcon={<MdHowToVote/>} variant={'solid'} size={'lg'} rounded={0} color={"white"} bgColor={"brand.100"} _hover={{ bg: "brand.200" }}>Zmień miejsce głosowania</Button></Link>
+                <MainButton link={'https://www.gov.pl/web/gov/zmien-miejsce-glosowania'} icon={<MdHowToVote/>}>Zmień miejsce głosowania</MainButton>
                 </WrapItem>
               </Wrap>
             </Stack>

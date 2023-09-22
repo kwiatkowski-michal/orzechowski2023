@@ -1,5 +1,5 @@
 import { DownloadIcon, MoonIcon, SunIcon } from "@chakra-ui/icons";
-import { Box, Button, Flex, HStack, IconButton, Image, Link, Menu, MenuButton, MenuDivider, MenuItem, MenuList, Show, Spacer, Tooltip, useColorMode, useColorModeValue, useToast } from "@chakra-ui/react";
+import { Box, Button, Flex, HStack, IconButton, Image, Link, Menu, MenuButton, MenuDivider, MenuItem, MenuList, Show, Spacer, Tooltip, useColorMode, useColorModeValue } from "@chakra-ui/react";
 import { FaUser, FaVoteYea } from "react-icons/fa";
 import { FaList, FaListCheck } from "react-icons/fa6";
 
@@ -26,36 +26,15 @@ function przejdzDoGlosowanie() {
   
 
 async function clearCacheAndInstallServiceWorker() {
-    const toast = useToast()
-    try {
-        // Usunięcie cache strony
-        await caches.delete('my-page-cache');
 
-        // Instalacja service workera
+    try {
+        await caches.delete('my-page-cache');
         const registration = await navigator.serviceWorker.register('/service-worker.js');
         console.log('Service Worker zainstalowany:', registration);
-
-        // Aktualizacja cache po instalacji service workera
         await registration.update();
-        toast({
-            title: 'Zaktualizowano pomyślnie',
-            description: "Aktualizacja została zainstalowana. Uruchom ponownie, aby zobaczyć zmiany.",
-            status: 'success',
-            duration: 9000,
-            position: "bottom-right",
-            isClosable: true,
-          })
         console.log('Cache strony wyczyszczone, a Service Worker zainstalowany i zaktualizowany.');
     } catch (error) {
         console.error('Wystąpił błąd podczas czyszczenia cache i instalacji Service Workera:', error);
-        toast({
-            title: 'Błąd aktualizacji',
-            description: "Wystąpił błąd podczas aktualizacji. Twoja przeglądarka nie wspiera aktualizacji.",
-            status: 'error',
-            position: "bottom-right",
-            duration: 9000,
-            isClosable: true,
-          })
     }
 }
 

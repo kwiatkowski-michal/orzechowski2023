@@ -1,19 +1,24 @@
-import Hero from "./Hero"
-import FeaturesMain from "./Opis"
-import Footer from "./Footer"
-import Values from "./Program"
-import { Box } from "@chakra-ui/react"
-import Akcje from "./Akcje"
-import Navbar from "./newNavbar"
+import {
+  createBrowserRouter,
+  RouterProvider,
+} from "react-router-dom";
+import StronaGlowna from "./strony/stronaGlowna";
+import Navbar from "./komponenty/newNavbar";
+import Footer from "./komponenty/Footer";
+import ErrorPage from "./strony/errror";
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <StronaGlowna />,
+    errorElement: <ErrorPage />,
+  },
+]);
 
 
 export const App = () => (
-  <Box>
-    <Navbar />
-    <Hero />
-    <FeaturesMain />
-    <Values />
-    {/* <Akcje /> */}
+  <>
+    <RouterProvider router={router}/>
     <Footer />
-  </Box>
+  </>
+  
 )

@@ -1,7 +1,8 @@
 import { Container, Stack, Heading, Button, Text, Box, Link, Wrap, WrapItem, useColorModeValue, Show, IconButton, Card, CardBody, CardHeader } from "@chakra-ui/react";
 import { FaFacebookMessenger, FaFacebookSquare, FaPeopleCarry, FaTiktok } from "react-icons/fa";
-import ModalSupport from "./Modal-wsparcie";
+import ModalSupport from "../komponenty/Modal-wsparcie";
 import { RiTwitterXFill } from "react-icons/ri";
+import { MainButton, SocialButton } from "../komponenty/components";
 export default function Hero() {
     return (
         <>
@@ -22,7 +23,7 @@ export default function Hero() {
                                             alignSelf={'left'}>
                                             <Wrap spacing={4} justify={'left'}>
                                                 <WrapItem>
-                                                    <Link target="_blank" href="https://ekipalewicy.pl"><Button leftIcon={<FaPeopleCarry />} variant={'solid'} size={'lg'} rounded={0} color={"white"} bgColor={"brand.100"} _hover={{ bg: "brand.200" }}>Dołącz do Ekipy Lewicy</Button></Link>
+                                                    <MainButton link="https://ekipalewicy.pl" icon={<FaPeopleCarry />}>Dołącz do Ekipy Lewicy</MainButton>
                                                 </WrapItem>
                                                 <WrapItem>
                                                     <ModalSupport></ModalSupport>
@@ -30,10 +31,10 @@ export default function Hero() {
                                             </Wrap>
                                         </Stack>
                                         <Wrap spacing={2} justify={'left'}>
-                                            <Link target="_blank" href={'https://m.me/112361920273367'}><IconButton aria-label="messenger" rounded={0} color={"brand.100"} bgColor={"brand.300"} _hover={{ bg: "brand.100", color: "white" }} icon={<FaFacebookMessenger></FaFacebookMessenger>}></IconButton></Link>
-                                            <Link target="_blank" href={'https://www.tiktok.com/@orzechowski_mat'}><IconButton aria-label="tiktok" rounded={0} color={"brand.100"} bgColor={"brand.300"} _hover={{ bg: "brand.100", color: "white" }} icon={<FaTiktok></FaTiktok>}></IconButton></Link>
-                                            <Link target="_blank" href={'https://facebook.com/orzechowski.mat'}><IconButton aria-label="facebook" rounded={0} color={"brand.100"} bgColor={"brand.300"} _hover={{ bg: "brand.100", color: "white" }} icon={<FaFacebookSquare></FaFacebookSquare>}></IconButton></Link>
-                                            <Link target="_blank" href={'https://x.com/orzechowski_mat'}><IconButton aria-label="x" rounded={0} color={"brand.100"} bgColor={"brand.300"} _hover={{ bg: "brand.100", color: "white" }} icon={<RiTwitterXFill />}></IconButton></Link>
+                                            <SocialButton link={'https://m.me/112361920273367'} icon={<FaFacebookMessenger />} />
+                                            <SocialButton link={'https://tiktok.com/@orzechowski_mat'} icon={<FaTiktok />} />
+                                            <SocialButton link={'https://www.facebook.com/orzechowski.mat'} icon={<FaFacebookSquare />} />
+                                            <SocialButton link={'https://x.com/orzechowski_mat'} icon={<RiTwitterXFill />} />
                                         </Wrap>
                                     </Stack>
                                 </CardBody>
@@ -53,18 +54,18 @@ export default function Hero() {
                                 <Stack direction='column' align={'bottom'} alignSelf={'center'}>
                                     <Wrap spacing={4} justify={'center'}>
                                         <WrapItem>
-                                            <Link target="_blank" href="https://ekipalewicy.pl"><Button variant={'solid'} leftIcon={<FaPeopleCarry />} size={'lg'} rounded={0} color={"white"} bgColor={"brand.100"} _hover={{ bg: "brand.200" }}>Dołącz do Ekipy Lewicy</Button></Link>
+                                        <MainButton link="https://ekipalewicy.pl" icon={<FaPeopleCarry />}>Dołącz do Ekipy Lewicy</MainButton>
                                         </WrapItem>
                                         <WrapItem>
-                                            <ModalSupport/>
+                                            <ModalSupport />
                                         </WrapItem>
                                     </Wrap>
                                 </Stack>
                                 <Wrap spacing={2} justify={'left'}>
-                                    <Link target="_blank" href={'https://m.me/112361920273367'}><IconButton aria-label="messenger" rounded={0} color={"brand.100"} bgColor={"brand.300"} _hover={{ bg: "brand.100", color: "white" }} icon={<FaFacebookMessenger></FaFacebookMessenger>}></IconButton></Link>
-                                    <Link target="_blank" href={'https://tiktok.com/@orzechowski_mat'}><IconButton aria-label="tiktok" rounded={0} color={"brand.100"} bgColor={"brand.300"} _hover={{ bg: "brand.100", color: "white" }} icon={<FaTiktok></FaTiktok>}></IconButton></Link>
-                                    <Link target="_blank" href={'https://www.facebook.com/orzechowski.mat'}><IconButton aria-label="facebook" rounded={0} color={"brand.100"} bgColor={"brand.300"} _hover={{ bg: "brand.100", color: "white" }} icon={<FaFacebookSquare></FaFacebookSquare>}></IconButton></Link>
-                                    <Link target="_blank" href={'https://x.com/orzechowski_mat'}><IconButton aria-label="x" rounded={0} color={"brand.100"} bgColor={"brand.300"} _hover={{ bg: "brand.100", color: "white" }} icon={<RiTwitterXFill />}></IconButton></Link>
+                                    <SocialButton link={'https://m.me/112361920273367'} icon={<FaFacebookMessenger />} />
+                                    <SocialButton link={'https://tiktok.com/@orzechowski_mat'} icon={<FaTiktok />} />
+                                    <SocialButton link={'https://www.facebook.com/orzechowski.mat'} icon={<FaFacebookSquare />} />
+                                    <SocialButton link={'https://x.com/orzechowski_mat'} icon={<RiTwitterXFill />} />
                                 </Wrap>
                             </Stack>
                         </Stack>
