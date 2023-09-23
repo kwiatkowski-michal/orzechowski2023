@@ -1,3 +1,4 @@
+import { CardNew } from "../komponenty/components";
 import Navbar from "../komponenty/newNavbar";
 import Hero from "../sekcje/Hero";
 import FeaturesMain from "../sekcje/Opis";
