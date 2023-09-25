@@ -76,9 +76,9 @@ export default function Navbar() {
                 <Box bgColor={useColorModeValue("brand.100", "gray.900")}>
                     <Box pt={4} px={4}>
                         <HStack as={'nav'}>
-                            <Image src="logo-mo.svg" alt="Mateusz Orzechowski" w={20} />
+                            <Image src="logo-mo.svg" alt="Mateusz Orzechowski" w={20} mr={5}/>
                             {Tabs.map((tab, i) => (
-                                <Link key={i} onClick={tab.link}><Button leftIcon={tab.icon} transition={"0.2s"} color={"white"} backgroundColor={"inherit"} rounded={'0'} _hover={{ bg: bgbutton }} variant="ghost" ml={4}>{tab.title}</Button></Link>
+                                <Link key={i} onClick={tab.link}><Button leftIcon={tab.icon} transition={"0.2s"} color={"white"} backgroundColor={"inherit"} rounded={'0'} _hover={{ bg: bgbutton }} variant="ghost" ml={0}>{tab.title}</Button></Link>
                             ))}
                             <Spacer />
                             <Tooltip label="Zainstaluj najnowszą wersję strony" aria-label='A tooltip'>
@@ -89,7 +89,7 @@ export default function Navbar() {
                             </Tooltip>
                         </HStack>
                     </Box>
-                </Box>
+                </Box> 
             </Show>
             <Show below="md">
                 <Flex p={5} pos={"absolute"} w={"100%"} justifyContent={'space-between'} minWidth='max-content' alignItems='center' gap='2'>

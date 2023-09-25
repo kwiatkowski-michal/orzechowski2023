@@ -44,7 +44,7 @@ export default function Hero() {
                 </Box>
             </Show>
             <Show below="md">
-                <Box bgImage={"./image2.jpg"} bgPosition="top" bgRepeat="no-repeat" bgSize={"cover"} py={"100"}>
+                <Box bgImage={"./image2.jpg"} bgPosition="top" bgRepeat="no-repeat" bgSize={"cover"} py={"40%"}>
                     <Container maxW={'4xl'}>
                         <Stack w={"100%"} as={Box} textAlign={'center'} spacing={{ base: 8, md: 14 }} pt={{ base: 20, md: 36 }} mt={"50%"}>
                             <Heading color={"white"} userSelect={"none"} fontSize={{ base: '5xl', md: '6xl' }} fontWeight={400} mb={15} sx={{

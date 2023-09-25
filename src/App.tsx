@@ -3,7 +3,6 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import StronaGlowna from "./strony/stronaGlowna";
-import Navbar from "./komponenty/newNavbar";
 import Footer from "./komponenty/Footer";
 import ErrorPage from "./strony/errror";
 const router = createBrowserRouter([
